@@ -9,7 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <style>
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -22,8 +24,7 @@
 
   /* Header */
   header {
-    border-bottom: 1px solid #e8e8e8;
-    padding: 20px 0;
+    height: 116px;
   }
   .header-inner {
     max-width: 960px;
@@ -33,6 +34,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 40px;
+    height: 100%;
   }
   .logo-link { display: block; }
   .logo { height: 65px; width: auto; }
@@ -206,6 +208,26 @@
     h1 { font-size: 24px; }
     .container { padding: 32px 16px 48px; }
   }
+
+  .swiper {
+    width: 100%;
+    max-width: 980px;
+    height: 636px;
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 0.8s ease;
+  }
+  .swiper-slide-active { opacity: 1 !important; }
+  .swiper-slide img {
+    width: 100%;
+    height: 636px;
+    object-fit: cover;
+    margin: 0;
+  }
+  .swiper-button-next, .swiper-button-prev { color: #fff; }
+  .swiper-pagination-bullet-active { background: #c88a2e; }
 </style>
 </head>
 <body>
@@ -222,6 +244,16 @@
     </nav>
   </div>
 </header>
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-dining.jpg" alt="St John's Wood Penthouse - Dining Room"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-living.jpg" alt="St John's Wood Penthouse - Living Room"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-wide.jpg" alt="St John's Wood Penthouse - Open Plan"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 <div class="index-intro">
   <h1>מאמרים ומדריכים</h1>
   <p>על עיצוב פנים, שיפוץ וקניית נכס בלונדון</p>
@@ -243,5 +275,17 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.swiper', {
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  loop: true,
+  autoplay: { delay: 4000, disableOnInteraction: false },
+  speed: 800,
+  pagination: { el: '.swiper-pagination', clickable: true },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+});
+</script>
 </body>
 </html>
