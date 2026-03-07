@@ -1,323 +1,54 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tamar Creative - עיצוב פנים בלונדון</title>
 <meta name="description" content="מאמרים ומדריכים על עיצוב פנים, שיפוץ וקניית נכס בלונדון - מאת תמר קריאייטיב סטודיו">
+
+
+
+
 <link rel="icon" type="image/png" href="/he/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<style>
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.8;
-    color: #717070;
-    background: #fff;
-    direction: rtl;
-  }
-
-  /* Header */
-  header {
-    height: 116px;
-  }
-  .header-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    height: 100%;
-  }
-  .logo-link { display: block; }
-  .logo { height: 65px; width: auto; }
-  nav { display: flex; gap: 32px; }
-  nav a {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.03em;
-    transition: color 0.2s;
-  }
-  nav a:hover { color: #c88a2e; }
-
-  /* Article */
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 64px;
-  }
-  h1 {
-    font-size: 32px;
-    font-weight: 300;
-    color: #717070;
-    margin-bottom: 8px;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-  }
-  .meta {
-    font-size: 13px;
-    color: #999;
-    margin-bottom: 40px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e8e8e8;
-  }
-  h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #717070;
-    margin: 40px 0 16px;
-  }
-  h3 {
-    font-size: 17px;
-    font-weight: 500;
-    color: #717070;
-    margin: 28px 0 10px;
-  }
-  p { margin-bottom: 18px; color: #717070; }
-  ul, ol {
-    margin-bottom: 18px;
-    padding-right: 24px;
-  }
-  li { margin-bottom: 8px; color: #717070; }
-  blockquote {
-    border-right: 3px solid #c88a2e;
-    padding: 16px 24px;
-    margin: 24px 0;
-    color: #666;
-    background: #fafafa;
-  }
-  img { max-width: 100%; height: auto; margin: 20px 0; }
-  table { width: 100%; border-collapse: collapse; margin: 24px 0; }
-  th, td {
-    padding: 10px 14px;
-    border: 1px solid #e8e8e8;
-    text-align: right;
-    font-size: 14px;
-    color: #717070;
-  }
-  th { background: #fafafa; font-weight: 500; color: #717070; }
-  a { color: #c88a2e; text-decoration: none; }
-  a:hover { color: #a06e1a; }
-  code { background: #f5f5f5; padding: 2px 6px; font-size: 14px; }
-  pre {
-    background: #2a2a2a;
-    color: #e8e8e8;
-    padding: 20px;
-    overflow-x: auto;
-    margin: 20px 0;
-    border-radius: 2px;
-  }
-  pre code { background: none; padding: 0; }
-
-  /* About page layout */
-  .about-top {
-    display: flex;
-    gap: 28px;
-    align-items: flex-start;
-    margin-bottom: 32px;
-  }
-  .about-top img {
-    width: 220px;
-    min-width: 220px;
-    max-width: 220px;
-    height: auto;
-    margin: 0;
-  }
-  .about-top .about-text p { margin-bottom: 14px; }
-  @media (max-width: 600px) {
-    .about-top { flex-direction: column; }
-    .about-top img { width: 160px; min-width: 160px; max-width: 160px; }
-  }
-
-  /* Footer */
-  footer {
-    background: #fff;
-    padding: 40px 0;
-    margin-top: 64px;
-  }
-  .footer-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 24px;
-    text-align: center;
-  }
-  .houzz-badge { width: 90px; height: 84px; margin: 0; }
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  .social-icon {
-    width: 39px;
-    height: 39px;
-    opacity: 0.9;
-    transition: opacity 0.2s;
-    margin: 0;
-  }
-  .social-icon:hover { opacity: 1; }
-  .footer-text p {
-    color: #717070;
-    font-size: 13px;
-    font-weight: 300;
-    margin-bottom: 4px;
-  }
-
-  /* Index page */
-  .index-intro {
-    max-width: 720px;
-    margin: 48px auto 0;
-    padding: 0 24px;
-  }
-  .index-intro h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 8px;
-  }
-  .index-intro p {
-    font-size: 15px;
-    color: #999;
-    margin-bottom: 0;
-  }
-  .article-list {
-    max-width: 720px;
-    margin: 32px auto 0;
-    padding: 0 24px;
-    list-style: none;
-  }
-  .article-list li {
-    padding: 20px 0;
-    border-bottom: 1px solid #e8e8e8;
-    margin: 0;
-  }
-  .article-list a {
-    color: #717070;
-    font-size: 18px;
-    font-weight: 300;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .article-list a:hover { color: #c88a2e; }
-  .article-meta {
-    font-size: 12px;
-    color: #999;
-    margin-top: 4px;
-  }
-  .empty {
-    max-width: 720px;
-    margin: 48px auto;
-    padding: 0 24px;
-    color: #999;
-    font-style: italic;
-  }
-
-  @media (max-width: 600px) {
-    .header-inner { flex-direction: column; gap: 12px; }
-    .logo { height: 48px; }
-    nav { gap: 20px; }
-    h1 { font-size: 24px; }
-    .container { padding: 32px 16px 48px; }
-  }
-
-  .swiper {
-    width: 100%;
-    max-width: 980px;
-    height: 636px;
-    margin: 0 auto;
-  }
-  .swiper-slide {
-    opacity: 0 !important;
-    transition: opacity 0.8s ease;
-  }
-  .swiper-slide-active { opacity: 1 !important; }
-  .swiper-slide img {
-    width: 100%;
-    height: 636px;
-    object-fit: cover;
-    margin: 0;
-  }
-  .swiper-button-next, .swiper-button-prev { color: #fff; }
-  .swiper-pagination-bullet-active { background: #c88a2e; }
-
-  /* Intro paragraph */
-  .intro-text {
-    max-width: 800px;
-    margin: 48px auto 0;
-    padding: 0 24px;
-    text-align: center;
-  }
-  .intro-text p {
-    font-size: 15px;
-    line-height: 1.9;
-    color: #717070;
-  }
-
-  /* Service boxes */
-  .services {
-    max-width: 960px;
-    margin: 48px auto 0;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 32px;
-  }
-  .service-box {
-    text-align: center;
-  }
-  .service-box img {
-    width: 52px;
-    height: 52px;
-    margin: 0 auto 16px;
-    display: block;
-    object-fit: contain;
-    opacity: 0.65;
-  }
-  .service-box h3 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #717070;
-    margin: 0 0 8px;
-  }
-  .service-box p {
-    font-size: 13px;
-    line-height: 1.8;
-    color: #999;
-    margin: 0;
-  }
-  @media (max-width: 600px) {
-    .services { grid-template-columns: 1fr; gap: 32px; }
-  }
-</style>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
     <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="Tamar Creative - Interior Design" class="logo">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
     </a>
     <nav>
-      <a href="/he/">מאמרים</a>
+      <a href="/he/neighbourhoods/">שכונות</a>
+      <a href="/he/articles/">מאמרים</a>
       <a href="/he/about/">אודות</a>
-      <a href="https://www.tamarcreative.com/contact">צרו קשר</a>
+      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
     </nav>
   </div>
 </header>
 <div class="swiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-dining.jpg" alt="St John's Wood Penthouse - Dining Room"></div>
-    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-living.jpg" alt="St John's Wood Penthouse - Living Room"></div>
-    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-wide.jpg" alt="St John's Wood Penthouse - Open Plan"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-dining.jpg" alt="פנטהאוז בסנט ג׳ונס ווד - פינת אוכל"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-living.jpg" alt="פנטהאוז בסנט ג׳ונס ווד - סלון"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-wide.jpg" alt="פנטהאוז בסנט ג׳ונס ווד - מרחב פתוח"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/israel-villa.jpg" alt="וילה בישראל - סלון"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/blush-brass-living.jpg" alt="Blush and Brass - סלון"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/finchley-fireplace.jpg" alt="נורת׳ פינצ׳לי - אח וארונות מדפים"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/muswell-hill-art.jpg" alt="מאזוול היל - סלון עם אמנות"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/sjw-openplan.jpg" alt="פנטהאוז בסנט ג׳ונס ווד - מרחב פתוח"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/west-finchley-dining.jpg" alt="ווסט פינצ׳לי - פינת אוכל"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/east-finchley-brick.jpg" alt="איסט פינצ׳לי - פינת אוכל עם קיר לבנים"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/south-ken-bathroom.jpg" alt="סאות׳ קנזינגטון - חדר רחצה"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/geometric-bathroom.jpg" alt="חדר רחצה - אריחים גיאומטריים"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/muswell-hill-reading.jpg" alt="מאזוול היל - פינת קריאה"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/muswell-hill-sideboard.jpg" alt="מאזוול היל - שידה ואמנות"></div>
+    <div class="swiper-slide"><img src="/he/assets/portfolio/kids-room-pink.jpg" alt="חדר ילדים - קיר גיאומטרי"></div>
   </div>
   <div class="swiper-pagination"></div>
   <div class="swiper-button-prev"></div>
@@ -325,6 +56,9 @@
 </div>
 <div class="intro-text">
   <p>סטודיו תמר קריאייטיב מלווה ישראלים שקונים, משפצים ומעצבים נכס בלונדון. מייעוץ ראשוני על שכונות ובדיקת נכסים, דרך תכנון אדריכלי ועיצוב פנים, ועד ניהול שיפוץ מלא מרחוק - עם צוות מקצועי על הקרקע ותקשורת בעברית לכל אורך הדרך.</p>
+</div>
+<div class="wa-cta">
+  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
 </div>
 <div class="services">
   <div class="service-box">
@@ -358,35 +92,43 @@
     <p>הבריטים עובדים אחרת - planning permission, leasehold, listed buildings. אני מתרגמת בין המערכת הבריטית לישראלים שנכנסים לתהליך בפעם הראשונה.</p>
   </div>
 </div>
-<div class="index-intro">
-  <h1>מאמרים ומדריכים</h1>
-  <p>לישראלים שקונים נכס בלונדון</p>
+<div class="article-teasers">
+  <h2>מדריכים לישראלים שקונים בלונדון</h2>
+  <div class="teaser-grid">
+    <a href="/he/neighbourhoods-guide/" class="teaser-card">
+      <img src="/he/neighbourhoods-guide/images/hero.webp" alt="השכונות שישראלים קונים בהן בלונדון">
+      <h3>השכונות שישראלים קונים בהן בלונדון</h3>
+    </a>
+    <a href="/he/chelsea/" class="teaser-card">
+      <img src="/he/chelsea/images/hero.webp" alt="צ׳לסי לונדון - השכונה שנראית מושלמת על הנייר">
+      <h3>צ׳לסי לונדון - השכונה שנראית מושלמת על הנייר</h3>
+    </a>
+    <a href="/he/marylebone/" class="teaser-card">
+      <img src="/he/marylebone/images/hero.webp" alt="מרילבון לונדון - השכונה שלא צריכה להוכיח כלום">
+      <h3>מרילבון לונדון - השכונה שלא צריכה להוכיח כלום</h3>
+    </a>
+    <a href="/he/london-with-kids/" class="teaser-card">
+      <img src="/he/london-with-kids/images/hero.webp" alt="לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם">
+      <h3>לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם</h3>
+    </a>
+    <a href="/he/south-kensington/" class="teaser-card">
+      <img src="/he/south-kensington/images/hero.webp" alt="סאות׳ קנזינגטון - השכונה שמרגישה כמו לונדון שדמיינתם">
+      <h3>סאות׳ קנזינגטון - השכונה שמרגישה כמו לונדון שדמיינתם</h3>
+    </a>
+    <a href="/he/notting-hill/" class="teaser-card">
+      <img src="/he/notting-hill/images/hero.webp" alt="נוטינג היל לונדון - המדריך שקונים ישראלים צריכים לפני שחותמים">
+      <h3>נוטינג היל לונדון - המדריך שקונים ישראלים צריכים לפני שחותמים</h3>
+    </a>
+  </div>
 </div>
-<ul class="article-list"><li><a href="/he/before-you-sign/" dir="rtl">מה לבדוק לפני שחותמים על נכס בלונדון</a></li>
-<li><a href="/he/british-contractors/" dir="rtl">למה קבלנים בריטיים מצטטים ככה - ומה באמת לצפות</a></li>
-<li><a href="/he/buying-process/" dir="rtl">איך קונים נכס בלונדון - התהליך שישראלים לא מכירים</a></li>
-<li><a href="/he/chelsea/" dir="rtl">צ׳לסי לונדון - השכונה שנראית מושלמת על הנייר</a></li>
-<li><a href="/he/family-flat-design/" dir="rtl">עיצוב דירה לשימוש משפחתי - איך מעצבים דירה בלונדון שעובדת לכולם</a></li>
-<li><a href="/he/hampstead-vs-sjw/" dir="rtl">המפסטד מול סנט ג׳ונס ווד - השוואה כנה</a></li>
-<li><a href="/he/hidden-costs/" dir="rtl">העלויות שאף אחד לא מספר לכם על נכס בלונדון</a></li>
-<li><a href="/he/israeli-vs-british-home/" dir="rtl">איך ישראלים ובריטים חושבים אחרת על בית</a></li>
-<li><a href="/he/just-bought-now-what/" dir="rtl">קניתי דירה בלונדון - מה עכשיו?</a></li>
-<li><a href="/he/leasehold-freehold/" dir="rtl">ליסהולד או פריהולד - מה ההבדל ולמה זה קריטי</a></li>
-<li><a href="/he/listed-buildings/" dir="rtl">מבנה רשום בלונדון - מתי אסור לגעת בכלום</a></li>
-<li><a href="/he/london-with-kids/" dir="rtl">לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם</a></li>
-<li><a href="/he/maida-vale/" dir="rtl">מיידה וייל לונדון - השכונה השקטה שישראלים עוד לא גילו</a></li>
-<li><a href="/he/marylebone/" dir="rtl">מרילבון לונדון - השכונה שלא צריכה להוכיח כלום</a></li>
-<li><a href="/he/neighbourhoods-guide/" dir="rtl">השכונות שישראלים קונים בהן בלונדון</a></li>
-<li><a href="/he/notting-hill/" dir="rtl">נוטינג היל לונדון - המדריך שקונים ישראלים צריכים לפני שחותמים</a></li>
-<li><a href="/he/period-features/" dir="rtl">מה זה period features ולמה זה משפיע על המחיר</a></li>
-<li><a href="/he/planning-permission/" dir="rtl">אישורי תכנון בלונדון - מה שישראלים לא יודעים</a></li>
-<li><a href="/he/primrose-hill/" dir="rtl">פרימרוז היל ובלסייז פארק - השכונות שישראלים עוד לא גילו</a></li>
-<li><a href="/he/real-estate-for-israelis/" dir="rtl">נדל\"ן בלונדון לישראלים - מה באמת צריך לדעת לפני שקונים</a></li>
-<li><a href="/he/remote-renovation/" dir="rtl">איך לנהל שיפוץ בלונדון מישראל</a></li>
-<li><a href="/he/renovation-timeline/" dir="rtl">איך שיפוץ בלונדון באמת עובד - לוחות זמנים, עלויות, תהליך</a></li>
-<li><a href="/he/school-short-stay/" dir="rtl">בית ספר בלונדון לשהייה קצרה - מה שמשפחות ישראליות צריכות לדעת</a></li>
-<li><a href="/he/south-kensington/" dir="rtl">סאות׳ קנזינגטון - השכונה שמרגישה כמו לונדון שדמיינתם</a></li>
-<li><a href="/he/what-is-london/" dir="rtl">מה זה בעצם ״לונדון״ - העיר שהיא לא עיר</a></li></ul>
+<div class="instagram-section">
+  <h2>עקבו אחרינו באינסטגרם</h2>
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+</div>
+
+<div class="wa-prefooter">
+  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+</div>
 
 <footer>
   <div class="footer-inner">
@@ -395,7 +137,7 @@
       <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
       <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
       <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 Design" class="houzz-badge">
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
     </div>
     <div class="footer-text">
       <p>סטודיו תמר קריאייטיב</p>
@@ -403,6 +145,30 @@
     </div>
   </div>
 </footer>
+
+<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+  <div class="wa-modal">
+    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
+    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
+    <h3>דברו איתי בוואטסאפ</h3>
+    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+    <span class="wa-number">+44 7477 94418</span>
+    <a href="https://wa.me/44747794418" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+  </div>
+</div>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
+});
+</script>
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+i.src="https://cdn.curator.io/published/7f788215-3822-4d45-ab0f-817c985bc0fb.js";
+e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 new Swiper('.swiper', {

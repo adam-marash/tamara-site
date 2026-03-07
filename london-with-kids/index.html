@@ -1,253 +1,40 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם | Tamar Creative</title>
-<meta name="title" content="לונדון עם ילדים - מדריך לישראלים עם דירה בלונדון">
+<title>לונדון עם ילדים - מדריך לישראלים עם דירה בלונדון | Tamar Creative</title>
 <meta name="description" content="לונדון עם ילדים ממבט של ישראלית שגרה כאן שני עשורים. פארקים, מוזיאונים בחינם, שכונות משפחתיות וטיפים מעשיים - מה שבאמת עובד כשיש לכם דירה בלונדון.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="לונדון עם ילדים - מדריך לישראלים עם דירה בלונדון">
+<meta property="og:title" content="לונדון עם ילדים - מדריך לישראלים עם דירה בלונדון | Tamar Creative">
 <meta property="og:description" content="לונדון עם ילדים ממבט של ישראלית שגרה כאן שני עשורים. פארקים, מוזיאונים בחינם, שכונות משפחתיות וטיפים מעשיים - מה שבאמת עובד כשיש לכם דירה בלונדון.">
 <meta property="og:site_name" content="Tamar Creative">
 <link rel="icon" type="image/png" href="/he/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+<link rel="stylesheet" href="/he/assets/styles.css">
 
-  body {
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.8;
-    color: #717070;
-    background: #fff;
-    direction: rtl;
-  }
-
-  /* Header */
-  header {
-    height: 116px;
-  }
-  .header-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    height: 100%;
-  }
-  .logo-link { display: block; }
-  .logo { height: 65px; width: auto; }
-  nav { display: flex; gap: 32px; }
-  nav a {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.03em;
-    transition: color 0.2s;
-  }
-  nav a:hover { color: #c88a2e; }
-
-  /* Article */
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 64px;
-  }
-  h1 {
-    font-size: 32px;
-    font-weight: 300;
-    color: #717070;
-    margin-bottom: 8px;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-  }
-  .meta {
-    font-size: 13px;
-    color: #999;
-    margin-bottom: 40px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e8e8e8;
-  }
-  h2 {
-    font-size: 22px;
-    font-weight: 400;
-    color: #717070;
-    margin: 40px 0 16px;
-  }
-  h3 {
-    font-size: 17px;
-    font-weight: 500;
-    color: #717070;
-    margin: 28px 0 10px;
-  }
-  p { margin-bottom: 18px; color: #717070; }
-  ul, ol {
-    margin-bottom: 18px;
-    padding-right: 24px;
-  }
-  li { margin-bottom: 8px; color: #717070; }
-  blockquote {
-    border-right: 3px solid #c88a2e;
-    padding: 16px 24px;
-    margin: 24px 0;
-    color: #666;
-    background: #fafafa;
-  }
-  img { max-width: 100%; height: auto; margin: 20px 0; }
-  table { width: 100%; border-collapse: collapse; margin: 24px 0; }
-  th, td {
-    padding: 10px 14px;
-    border: 1px solid #e8e8e8;
-    text-align: right;
-    font-size: 14px;
-    color: #717070;
-  }
-  th { background: #fafafa; font-weight: 500; color: #717070; }
-  a { color: #c88a2e; text-decoration: none; }
-  a:hover { color: #a06e1a; }
-  code { background: #f5f5f5; padding: 2px 6px; font-size: 14px; }
-  pre {
-    background: #2a2a2a;
-    color: #e8e8e8;
-    padding: 20px;
-    overflow-x: auto;
-    margin: 20px 0;
-    border-radius: 2px;
-  }
-  pre code { background: none; padding: 0; }
-
-  /* About page layout */
-  .about-top {
-    display: flex;
-    gap: 28px;
-    align-items: flex-start;
-    margin-bottom: 32px;
-  }
-  .about-top img {
-    width: 220px;
-    min-width: 220px;
-    max-width: 220px;
-    height: auto;
-    margin: 0;
-  }
-  .about-top .about-text p { margin-bottom: 14px; }
-  @media (max-width: 600px) {
-    .about-top { flex-direction: column; }
-    .about-top img { width: 160px; min-width: 160px; max-width: 160px; }
-  }
-
-  /* Footer */
-  footer {
-    background: #fff;
-    padding: 40px 0;
-    margin-top: 64px;
-  }
-  .footer-inner {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 24px;
-    text-align: center;
-  }
-  .houzz-badge { width: 90px; height: 84px; margin: 0; }
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  .social-icon {
-    width: 39px;
-    height: 39px;
-    opacity: 0.9;
-    transition: opacity 0.2s;
-    margin: 0;
-  }
-  .social-icon:hover { opacity: 1; }
-  .footer-text p {
-    color: #717070;
-    font-size: 13px;
-    font-weight: 300;
-    margin-bottom: 4px;
-  }
-
-  /* Index page */
-  .index-intro {
-    max-width: 720px;
-    margin: 48px auto 0;
-    padding: 0 24px;
-  }
-  .index-intro h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 8px;
-  }
-  .index-intro p {
-    font-size: 15px;
-    color: #999;
-    margin-bottom: 0;
-  }
-  .article-list {
-    max-width: 720px;
-    margin: 32px auto 0;
-    padding: 0 24px;
-    list-style: none;
-  }
-  .article-list li {
-    padding: 20px 0;
-    border-bottom: 1px solid #e8e8e8;
-    margin: 0;
-  }
-  .article-list a {
-    color: #717070;
-    font-size: 18px;
-    font-weight: 300;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .article-list a:hover { color: #c88a2e; }
-  .article-meta {
-    font-size: 12px;
-    color: #999;
-    margin-top: 4px;
-  }
-  .empty {
-    max-width: 720px;
-    margin: 48px auto;
-    padding: 0 24px;
-    color: #999;
-    font-style: italic;
-  }
-
-  @media (max-width: 600px) {
-    .header-inner { flex-direction: column; gap: 12px; }
-    .logo { height: 48px; }
-    nav { gap: 20px; }
-    h1 { font-size: 24px; }
-    .container { padding: 32px 16px 48px; }
-  }
-</style>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
     <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="Tamar Creative - Interior Design" class="logo">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
     </a>
     <nav>
-      <a href="/he/">מאמרים</a>
+      <a href="/he/neighbourhoods/">שכונות</a>
+      <a href="/he/articles/">מאמרים</a>
       <a href="/he/about/">אודות</a>
-      <a href="https://www.tamarcreative.com/contact">צרו קשר</a>
+      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
     </nav>
   </div>
 </header>
+<div class="hero-image"><img src="images/hero.webp" alt="לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם"></div>
 <main class="container">
+<h1>לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם</h1>
 <p><img src="images/hero.webp" alt="משפחה בפארק בלונדון - ילדים רצים על דשא ירוק עם בתים ויקטוריאניים ברקע"></p>
 <h2>למה לונדון עיר מעולה לילדים (ואיך ישראלים מפספסים את זה)</h2>
 <p>רוב הישראלים שמגיעים ללונדון עם ילדים עושים את אותה טעות. הם מנסים לדחוס את הלונדון איי, ביג בן, ארמון בקינגהאם ושלושה מוזיאונים לתוך חמישה ימים. הילדים עייפים, ההורים עצבניים, וכולם חוזרים הביתה עם תחושה שלונדון זה קשה עם ילדים.</p>
@@ -272,10 +59,7 @@
 <p><strong>Natural History Museum</strong> - דינוזאורים, יהלומים, לוויתן כחול ענקי תלוי מהתקרה. הילדים מאבדים את הראש פה. יש גם סימולטור רעידת אדמה. שלוש עד ארבע שעות ביקור, בקלות. <!-- source: https://www.nhm.ac.uk/visit/activities-for-families-and-kids.html --></p>
 <p><strong>Science Museum</strong> - The Garden בקומת המרתף הוא המקום הכי טוב בלונדון לפעוטות. משחקי מים אינטראקטיביים שהילדים פשוט לא רוצים לעזוב. הגלריה החדשה של החלל פתחה ב-2025. ל- Wonderlab צריך כרטיס נפרד, אבל שווה כל שקל. <!-- source: https://www.sciencemuseum.org.uk/visit --></p>
 <p><strong>Young V&amp;A</strong> - מוזיאון שתוכנן מאפס לילדים. שלוש גלריות - Imagine, Play, Design. אינטראקטיבי, חווייתי, מבריק. ילדים מגיל שנתיים ועד עשר נהנים פה.</p>
-<blockquote>
-<p>[!TIP]
-הכניסה חינם אבל צריך להזמין כרטיסים מראש באינטרנט, במיוחד ל- Science Museum. תעשו את זה. ביום שבת בחופשה בלי הזמנה מראש, לא תיכנסו.</p>
-</blockquote>
+<div class="callout callout-tip"><span class="callout-label">טיפ</span><p>הכניסה חינם אבל צריך להזמין כרטיסים מראש באינטרנט, במיוחד ל- Science Museum. תעשו את זה. ביום שבת בחופשה בלי הזמנה מראש, לא תיכנסו.</p></div>
 <!-- source: https://www.sciencemuseum.org.uk/visit -->
 
 <p>Natural History Museum ו- Science Museum נמצאים ב- South Kensington, ויש מנהרה מהרכבת התחתית שמובילה ישירות אליהם. Young V&amp;A נמצא ב- Bethnal Green - רחוק יותר, אבל שווה את הנסיעה. אפשר לעשות שניים ביום אחד אם מתחילים מוקדם - אחד בבוקר, הפסקת צהריים בבית הקפה של המוזיאון, ואחד אחרי הצהריים.</p>
@@ -345,10 +129,7 @@
 <p><strong>כסאות גבוהים</strong> - ברוב המסעדות בלונדון יש כסאות גבוהים לתינוקות, ובדרך כלל הצוות ידידותי לילדים. אבל - ויש אבל - מסעדות יותר יוקרתיות לא תמיד מקבלות ילדים בערב. תבדקו מראש.</p>
 <p><strong>סופרמרקט</strong> - כשיש לכם מטבח בדירה, חצי מהארוחות יהיו בבית. Waitrose ו- M&amp;S Food הם הרמה הכי טובה. Sainsbury&#39;s ו- Tesco טובים ליומיום. כולם מוכרים מוצרים שילדים ישראלים מכירים - פסטה, אורז, ירקות, פירות, חלב.</p>
 <h2>טיפים מישראלית שגידלה ילדים בלונדון</h2>
-<blockquote>
-<p>[!IMPORTANT]
-ילדים מתחת לגיל 11 נוסעים בחינם ברכבת התחתית, באוטובוסים ובטראם. פשוט עולים עם הורה שמשלם. מגיל 11 ועד 15 יש כרטיס Zip Oyster מוזל.</p>
-</blockquote>
+<div class="callout callout-important"><span class="callout-label">חשוב</span><p>ילדים מתחת לגיל 11 נוסעים בחינם ברכבת התחתית, באוטובוסים ובטראם. פשוט עולים עם הורה שמשלם. מגיל 11 ועד 15 יש כרטיס Zip Oyster מוזל.</p></div>
 <!-- source: https://tfl.gov.uk/fares/free-and-discounted-travel -->
 
 <p>זה חלק מ<a href="/real-costs-beyond-purchase">העלויות השוטפות שכדאי להכיר</a> כשמחזיקים דירה בלונדון.</p>
@@ -369,6 +150,10 @@
 
 </main>
 
+<div class="wa-prefooter">
+  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-social">
@@ -376,7 +161,7 @@
       <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
       <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
       <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 Design" class="houzz-badge">
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
     </div>
     <div class="footer-text">
       <p>סטודיו תמר קריאייטיב</p>
@@ -384,5 +169,21 @@
     </div>
   </div>
 </footer>
+
+<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+  <div class="wa-modal">
+    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
+    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
+    <h3>דברו איתי בוואטסאפ</h3>
+    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+    <span class="wa-number">+44 7477 94418</span>
+    <a href="https://wa.me/44747794418" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+  </div>
+</div>
+<script>
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
+});
+</script>
 </body>
 </html>
