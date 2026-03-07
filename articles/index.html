@@ -18,86 +18,83 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/he/assets/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
+<header class="py-3">
+  <div class="container d-flex align-items-center gap-4">
+    <a href="/he/" class="d-block">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav>
-      <a href="/he/neighbourhoods/">שכונות</a>
-      <a href="/he/articles/">מאמרים</a>
-      <a href="/he/about/">אודות</a>
-      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
+    <nav class="d-flex gap-4">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="lang-switch" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
   </div>
 </header>
-<div class="index-intro">
+<div class="container article-body py-5">
   <h1>מאמרים ומדריכים</h1>
-  <p>לישראלים שקונים נכס בלונדון</p>
+  <p class="text-secondary fs-5">לישראלים שקונים נכס בלונדון</p>
+  <ul class="list-unstyled mt-4"><li class="py-3 border-bottom" dir="rtl"><a href="/he/before-renovating/" class="text-decoration-none fs-5 fw-light">מה צריך לדעת לפני שיפוץ בלונדון - המדריך המעשי</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/before-you-sign/" class="text-decoration-none fs-5 fw-light">מה לבדוק לפני שחותמים על נכס בלונדון</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/british-contractors/" class="text-decoration-none fs-5 fw-light">למה קבלנים בריטיים מתמחרים ככה - ומה באמת לצפות</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/buying-process/" class="text-decoration-none fs-5 fw-light">איך קונים נכס בלונדון - התהליך שישראלים לא מכירים</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/family-flat-design/" class="text-decoration-none fs-5 fw-light">עיצוב דירה לשימוש משפחתי - איך מעצבים דירה בלונדון שעובדת לכולם</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/gp-healthcare/" class="text-decoration-none fs-5 fw-light">GP ובריאות בלונדון - מדריך מעשי למשפחות ישראליות</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/hidden-costs/" class="text-decoration-none fs-5 fw-light">העלויות שאף אחד לא מספר לכם על נכס בלונדון</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/interior-designer-london/" class="text-decoration-none fs-5 fw-light">מעצבת פנים בלונדון - מה לחפש, איך התהליך עובד, ולמה עברית משנה</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/israeli-vs-british-home/" class="text-decoration-none fs-5 fw-light">איך ישראלים ובריטים חושבים אחרת על בית</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/just-bought-now-what/" class="text-decoration-none fs-5 fw-light">קניתי דירה בלונדון - מה עכשיו?</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/leasehold-freehold/" class="text-decoration-none fs-5 fw-light">ליסהולד או פריהולד - מה ההבדל ולמה זה קריטי</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/listed-buildings/" class="text-decoration-none fs-5 fw-light">מבנה רשום בלונדון - מתי אסור לגעת בכלום</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/london-style-design/" class="text-decoration-none fs-5 fw-light">עיצוב בית בסגנון לונדוני - מה הופך בית בלונדון לבית בלונדון</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/mixing-old-new/" class="text-decoration-none fs-5 fw-light">שילוב ישן וחדש בעיצוב פנים - האמנות הלונדונית שישראלים צריכים להכיר</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/period-features/" class="text-decoration-none fs-5 fw-light">מה זה period features ולמה זה משפיע על המחיר</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/planning-permission/" class="text-decoration-none fs-5 fw-light">אישורי תכנון בלונדון - מה שישראלים לא יודעים</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/real-estate-for-israelis/" class="text-decoration-none fs-5 fw-light">נדל"ן בלונדון לישראלים - מה באמת צריך לדעת לפני שקונים</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/remote-renovation/" class="text-decoration-none fs-5 fw-light">איך לנהל שיפוץ בלונדון מישראל</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/renovation-timeline/" class="text-decoration-none fs-5 fw-light">איך שיפוץ בלונדון באמת עובד - לוחות זמנים, עלויות, תהליך</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/school-short-stay/" class="text-decoration-none fs-5 fw-light">בית ספר בלונדון לשהייה קצרה - מה שמשפחות ישראליות צריכות לדעת</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/useful-tools/" class="text-decoration-none fs-5 fw-light">כלים שימושיים לרוכשי נכס בלונדון</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/victorian-style/" class="text-decoration-none fs-5 fw-light">סגנון ויקטוריאני עיצוב - למה הבתים הישנים בלונדון הם הכי יפים</a></li>
+<li class="py-3 border-bottom" dir="rtl"><a href="/he/what-is-london/" class="text-decoration-none fs-5 fw-light">מה זה בעצם ״לונדון״ - העיר שהיא לא עיר</a></li></ul>
 </div>
-<ul class="article-list"><li><a href="/he/before-renovating/" dir="rtl">מה צריך לדעת לפני שיפוץ בלונדון - המדריך המעשי</a></li>
-<li><a href="/he/before-you-sign/" dir="rtl">מה לבדוק לפני שחותמים על נכס בלונדון</a></li>
-<li><a href="/he/british-contractors/" dir="rtl">למה קבלנים בריטיים מתמחרים ככה - ומה באמת לצפות</a></li>
-<li><a href="/he/buying-process/" dir="rtl">איך קונים נכס בלונדון - התהליך שישראלים לא מכירים</a></li>
-<li><a href="/he/family-flat-design/" dir="rtl">עיצוב דירה לשימוש משפחתי - איך מעצבים דירה בלונדון שעובדת לכולם</a></li>
-<li><a href="/he/gp-healthcare/" dir="rtl">GP ובריאות בלונדון - מדריך מעשי למשפחות ישראליות</a></li>
-<li><a href="/he/hidden-costs/" dir="rtl">העלויות שאף אחד לא מספר לכם על נכס בלונדון</a></li>
-<li><a href="/he/interior-designer-london/" dir="rtl">מעצבת פנים בלונדון - מה לחפש, איך התהליך עובד, ולמה עברית משנה</a></li>
-<li><a href="/he/israeli-vs-british-home/" dir="rtl">איך ישראלים ובריטים חושבים אחרת על בית</a></li>
-<li><a href="/he/just-bought-now-what/" dir="rtl">קניתי דירה בלונדון - מה עכשיו?</a></li>
-<li><a href="/he/leasehold-freehold/" dir="rtl">ליסהולד או פריהולד - מה ההבדל ולמה זה קריטי</a></li>
-<li><a href="/he/listed-buildings/" dir="rtl">מבנה רשום בלונדון - מתי אסור לגעת בכלום</a></li>
-<li><a href="/he/london-style-design/" dir="rtl">עיצוב בית בסגנון לונדוני - מה הופך בית בלונדון לבית בלונדון</a></li>
-<li><a href="/he/mixing-old-new/" dir="rtl">שילוב ישן וחדש בעיצוב פנים - האמנות הלונדונית שישראלים צריכים להכיר</a></li>
-<li><a href="/he/period-features/" dir="rtl">מה זה period features ולמה זה משפיע על המחיר</a></li>
-<li><a href="/he/planning-permission/" dir="rtl">אישורי תכנון בלונדון - מה שישראלים לא יודעים</a></li>
-<li><a href="/he/real-estate-for-israelis/" dir="rtl">נדל"ן בלונדון לישראלים - מה באמת צריך לדעת לפני שקונים</a></li>
-<li><a href="/he/remote-renovation/" dir="rtl">איך לנהל שיפוץ בלונדון מישראל</a></li>
-<li><a href="/he/renovation-timeline/" dir="rtl">איך שיפוץ בלונדון באמת עובד - לוחות זמנים, עלויות, תהליך</a></li>
-<li><a href="/he/school-short-stay/" dir="rtl">בית ספר בלונדון לשהייה קצרה - מה שמשפחות ישראליות צריכות לדעת</a></li>
-<li><a href="/he/useful-tools/" dir="rtl">כלים שימושיים לרוכשי נכס בלונדון</a></li>
-<li><a href="/he/victorian-style/" dir="rtl">סגנון ויקטוריאני עיצוב - למה הבתים הישנים בלונדון הם הכי יפים</a></li>
-<li><a href="/he/what-is-london/" dir="rtl">מה זה בעצם ״לונדון״ - העיר שהיא לא עיר</a></li></ul>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-social">
-      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
-      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
-      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
-      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
+<footer class="pt-5 mt-5">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" style="width:39px;height:39px;opacity:.9"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" style="width:90px;height:84px">
     </div>
-    <div class="footer-links">
-      <a href="/he/useful-tools/">כלים שימושיים</a>
-      <a href="/he/articles/">כל המאמרים</a>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="/he/useful-tools/" class="text-secondary small text-decoration-none">כלים שימושיים</a>
+      <a href="/he/articles/" class="text-secondary small text-decoration-none">כל המאמרים</a>
     </div>
-    <div class="footer-text">
-      <p>סטודיו תמר קריאייטיב</p>
-      <p>לונדון | תל אביב</p>
-    </div>
+    <p class="text-secondary small fw-light mb-1">סטודיו תמר קריאייטיב</p>
+    <p class="text-secondary small fw-light">לונדון | תל אביב</p>
   </div>
 </footer>
 
-<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-  <div class="wa-modal">
-    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
-    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
-    <h3>דברו איתי בוואטסאפ</h3>
-    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
-    <span class="wa-number">+972 54-544-1289</span>
-    <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+<div id="wa-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content text-center p-5">
+      <button type="button" class="btn-close position-absolute top-0 start-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="rounded-circle d-block mx-auto mb-3" style="width:80px;height:80px;object-fit:cover;object-position:center 35%">
+      <h3 class="h5 mb-2">דברו איתי בוואטסאפ</h3>
+      <p class="text-secondary small mb-4">שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+      <span class="d-block mb-4 fs-4 fw-light" style="direction:ltr">+972 54-544-1289</span>
+      <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="btn btn-wa">פתחו שיחה בוואטסאפ</a>
+    </div>
   </div>
 </div>
-<script>
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

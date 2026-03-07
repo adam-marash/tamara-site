@@ -20,26 +20,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/he/assets/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
+<header class="py-3">
+  <div class="container d-flex align-items-center gap-4">
+    <a href="/he/" class="d-block">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav>
-      <a href="/he/neighbourhoods/">שכונות</a>
-      <a href="/he/articles/">מאמרים</a>
-      <a href="/he/about/">אודות</a>
-      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
+    <nav class="d-flex gap-4">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="lang-switch" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
   </div>
 </header>
-<div class="hero-image"><img src="images/hero.webp" alt="איזלינגטון לונדון - השכונה שמגניבה מבפנים"></div>
-<main class="container">
+<div class="container-hero mx-auto"><img src="images/hero.webp" alt="איזלינגטון לונדון - השכונה שמגניבה מבפנים" class="w-100 d-block"></div>
+<main class="container article-body">
 <h1>איזלינגטון לונדון - השכונה שמגניבה מבפנים</h1>
 <h2>איזלינגטון לונדון - למה דווקא פה</h2>
 <p>רוב הישראלים שמחפשים דירה שנייה בלונדון מתחילים מאותם מקומות - סאות׳ קנזינגטון, נוטינג היל, צ׳לסי, מרילבון. שכונות שהם שמעו עליהן, שחברים קנו בהן, שנראות להם כמו &quot;לונדון&quot;. ואיזלינגטון לונדון? רוב הישראלים אפילו לא שמעו את השם.</p>
@@ -55,13 +56,13 @@
 <p><strong>Highbury</strong> - הכי צפונית. Highbury Fields, הפארק הכי גדול בבורו, עם מגרש משחקים מצוין ו- cafe. בתים ויקטוריאניים ואדוארדיאניים מרווחים, חלקם עם גינות גדולות. קרוב לתחנת Highbury &amp; Islington שמחברת ל- Victoria Line ול- Overground. מרגיש כמו שכונה שגרים בה - לא שכונה שמבקרים בה. למשפחות, זה כנראה החלק הכי טוב.</p>
 <p>ועוד דבר שחשוב להבין: כל האזורים האלה קרובים אחד לשני. מ- Angel ל- Canonbury - עשר דקות הליכה. מ- Barnsbury ל- Highbury Fields - חמש עשרה דקות. זו לא שכונה שצריך מכונית בשבילה. בעצם, כמו בכל לונדון - מכונית היא יותר נטל מנכס.</p>
 <h2>מה קונים ובכמה</h2>
-<p><img src="images/body-1.webp" alt="פנים דירת Victorian conversion באיזלינגטון - תקרות גבוהות, חלונות sash, ומטבח מודרני בנכס היסטורי"></p>
+<p><img class="img-fluid my-3" src="images/body-1.webp" alt="פנים דירת Victorian conversion באיזלינגטון - תקרות גבוהות, חלונות sash, ומטבח מודרני בנכס היסטורי"></p>
 <p>מחיר ממוצע של נכס באיזלינגטון: כ-700 אלף פאונד. <!-- source: https://www.ons.gov.uk/visualisations/housingpriceslocal/E09000019/ --> אבל כמו תמיד, הממוצע לא מספר הרבה. מה שמשנה הוא מה אתם מחפשים ובאיזה אזור.</p>
 <p><strong>דירות ב- Victorian conversions</strong> - הנכס הנפוץ ביותר באיזלינגטון. בתים ויקטוריאניים גדולים שחולקו לדירות. תקרות גבוהות, חלונות sash מקוריים, אפילו אח מקורית אם יש מזל. רוב הדירות האלה הן leasehold. דירת שני חדרים באזור Angel: 700 אלף עד מיליון פאונד. ב- Barnsbury: 600 אלף עד 850 אלף. מי שלא בטוח מה ההבדל בין leasehold ל- freehold - <a href="/he/leasehold-freehold/">שווה לקרוא את ההסבר המלא</a>.</p>
 <p><strong>טרסים ג׳ורג׳יאניים</strong> - בתים שלמים, בעיקר ב- Canonbury ו- Barnsbury. שלוש עד חמש קומות, פרופורציות מושלמות, חלונות גדולים, גינה אחורית. בית שלם ב- Canonbury מתחיל מ-1.5 מיליון ויכול להגיע ל-3 מיליון ומעלה בכתובות הטובות. <!-- source: https://www.rightmove.co.uk/house-prices/islington.html --></p>
 <p><strong>דירות חדשות</strong> - פיתוחים חדשים, בעיקר סביב Angel ולאורך ה- Regent&#39;s Canal. מודרני, מפרט גבוה, בדרך כלל עם concierge. אבל בלי האופי של הנכסים ההיסטוריים. ובאיזלינגטון, האופי הוא מה שמשלמים עליו.</p>
 <p>מחיר למ&quot;ר ב- N1: בין 8,300 ל-11,500 פאונד, תלוי באזור המדויק. <!-- source: https://housemetric.co.uk/analysis/district/N1/Islington --> באזור Angel עצמו, יותר קרוב ל-12,000-13,500 פאונד למ&quot;ר. לשם השוואה, ב- South Kensington זה 16,000-18,000. ב- Notting Hill כ-14,000. במילים אחרות - באיזלינגטון מקבלים יותר שטח על פחות כסף, בנכסים עם אותו אופי היסטורי.</p>
-<div class="callout callout-important"><span class="callout-label">חשוב</span><strong>Council tax</strong> באיזלינגטון: Band D עומד על כ-2,012 פאונד בשנה. לבעלי דירה שנייה - המועצה יכולה להוסיף 100% פרמיה מאפריל 2025. תחשבו את זה בתקציב.</div>
+<div class="alert alert-danger callout"><strong class="d-block small text-uppercase mb-1">חשוב</strong><strong>Council tax</strong> באיזלינגטון: Band D עומד על כ-2,012 פאונד בשנה. לבעלי דירה שנייה - המועצה יכולה להוסיף 100% פרמיה מאפריל 2025. תחשבו את זה בתקציב.</div>
 <!-- source: https://homenicom.co.uk/area/islington/council-tax -->
 <!-- source: https://www.gov.uk/government/publications/long-term-empty-homes-and-second-homes-council-tax-premiums-and-exceptions -->
 
@@ -81,10 +82,10 @@
 <p>זה לא צריך להפחיד. הפנים של הנכס - מטבח, חדרי רחצה, רצפות, חיווט, אינסטלציה - את כל זה אפשר לשפץ בלי planning permission (כל עוד זה לא נוגע בחזית החיצונית ולא משנה מבנה). ובנכסים של איזלינגטון יש הרבה מה לעשות בפנים. זה בדיוק המקום שבו <a href="/he/interior-designer-london/">מעצבת שמכירה את המערכת מבפנים</a> חוסכת לכם זמן וטעויות. פרטים על <a href="/he/planning-permission/">אישורי תכנון בלונדון</a> ועל <a href="/he/listed-buildings/">מה קורה כשהנכס הוא מבנה רשום</a>.</p>
 <p>אגב, חלק מהנכסים באיזלינגטון הם גם listed buildings - מבנים רשומים - ושם המגבלות חמורות עוד יותר. בדקו את המעמד של הנכס לפני שאתם חותמים. <a href="/he/period-features/">לפרטים על period features ואיך הם משפיעים על שווי הנכס</a>.</p>
 <h2>הגסטרופאב ועוד - תרבות ואוכל באיזלינגטון</h2>
-<p><img src="images/body-2.webp" alt="Upper Street באיזלינגטון - מסעדות, חנויות עצמאיות, ובתי קפה לאורך הרחוב הראשי"></p>
+<p><img class="img-fluid my-3" src="images/body-2.webp" alt="Upper Street באיזלינגטון - מסעדות, חנויות עצמאיות, ובתי קפה לאורך הרחוב הראשי"></p>
 <p>הבריטים המציאו משהו שלישראלים אין לו מושג מקביל - ה- gastropub. בישראל, פאב זה מקום לשתות בירה. בלונדון, ובמיוחד באיזלינגטון שנחשבת אחת מערשות התנועה הזו, פאב הוא מקום שאוכלים בו אוכל ברמה של מסעדה, בלי הפורמליות. The Eagle ב- Farringdon Road, שנפתח ב-1991, נחשב ל- gastropub הראשון בלונדון - המקום שבו המושג נולד. <!-- source: https://theeaglefarringdon.co.uk/history --> The Pig and Butcher מנתח בשר בעצמו במקום, כל יום. <!-- source: https://thepigandbutcher.co.uk/ --> ו- The Duke of Cambridge היה הפאב האורגני המוסמך הראשון בבריטניה. <!-- source: https://www.dukeorganic.co.uk/ --></p>
 <p>למי שרגיל למסעדות של תל אביב - תחשבו על אוכל ברמה הזו, במקום עם אווירה של בית, ללא הזמנה מראש, במחירים סבירים. זה הגסטרופאב. ואיזלינגטון היא אולי המקום הכי טוב בלונדון לחוות את זה.</p>
-<hr>
+<hr class="my-4">
 <p>ומעבר לאוכל:</p>
 <p><strong>Almeida Theatre</strong> - תיאטרון קטן (325 מקומות) ב- Upper Street שמפיק הפקות שמגיעות ל- West End. <!-- source: https://en.wikipedia.org/wiki/Almeida_Theatre --> תיאטרון ברמה של Broadway, בשכונה.</p>
 <p><strong>Sadler&#39;s Wells</strong> - אחד מבתי המחול החשובים בעולם. ריקוד עכשווי, בלט, הפקות בינלאומיות. <!-- source: https://www.sadlerswells.com/about-us/our-theatres/ --> גם מי שלא &quot;הולך על מחול&quot; - הביקור הראשון ב- Sadler&#39;s Wells משנה דעות.</p>
@@ -92,18 +93,18 @@
 <p>ו- Upper Street עצמו - כמעט קילומטר של מסעדות, ברים, חנויות וגלריות. מאוכל ספרדי ופרואני ועד סיני מצוין. Frederick&#39;s, מוסד שכונתי שאותה משפחה מנהלת מאז שנות השישים, עם חצר פנימית וגינה. בערב חמישי, Upper Street חי. בבוקר שבת, בתי הקפה מתמלאים. זו שכונה שאנשים חיים בה, לא רק גרים בה.</p>
 <p>וגם: Chapel Market - שוק רחוב שקיים פה מאז שנות ה-1800. ירקות, פירות, פרחים, אוכל מוכן. לא תיירותי בכלל. לונדונים קונים פה. זה סוג הדבר שאתם לא מוצאים ב- South Kensington.</p>
 <h2>איזלינגטון עם ילדים</h2>
-<p><img src="images/body-3.webp" alt="Highbury Fields באיזלינגטון - הפארק הגדול בבורו עם מגרש משחקים, מדשאות, ומשפחות"></p>
+<p><img class="img-fluid my-3" src="images/body-3.webp" alt="Highbury Fields באיזלינגטון - הפארק הגדול בבורו עם מגרש משחקים, מדשאות, ומשפחות"></p>
 <p>בניגוד לצ׳לסי שהיא שכונה לזוגות יותר מלמשפחות, איזלינגטון היא שכונה שעובדת עם ילדים. לא בצורה המלוטשת של South Kensington, אלא בצורה יותר אמיתית.</p>
 <p><strong>Highbury Fields</strong> הוא המקום. הפארק הכי גדול באיזלינגטון, עם מגרש משחקים שילדים אוהבים - חול, מים, מתקני טיפוס, ו- cafe ממש שם. בקיץ, אפשר להביא גריל (כן, מותר). מדשאה ענקית, מגרשי טניס, בריכת שחייה. לישראלים שרגילים לפארקים - הייברי פילדס עושה את העבודה.</p>
 <p><strong>Little Angel Theatre</strong> - תיאטרון בובות שנוסד ב-1960, אחד משלושה בלבד באנגליה. <!-- source: https://en.wikipedia.org/wiki/Little_Angel_Theatre --> הצגות לגילאי שנה ומעלה. ביום שבת, הקהל הוא חצי הורים חצי סבים. אינטימי, מקסים, ושונה מכל דבר שיש בישראל.</p>
 <p>גני הכיכר של Canonbury ו- Barnsbury הם שקטים ובטוחים. רחובות שילדים יכולים ללכת בהם. בתי קפה שמקבלים עגלות בלי לגלגל עיניים. ו- Angel עצמו, עם החנויות והשווקים - ילדים גדולים יותר נהנים שם.</p>
-<div class="callout callout-note"><span class="callout-label">הערה</span>לשהיות ארוכות יותר, בית ספר הוא שאלה רלוונטית. ילדים עם ויזת תייר לא יכולים להירשם לבתי ספר ממלכתיים, אבל בתי ספר פרטיים מקבלים לשהיות של עד חצי שנה. פרטים מלאים במדריך שלנו על <a href="/he/school-short-stay/">בתי ספר בלונדון לשהייה קצרה</a>.</div>
+<div class="alert alert-info callout"><strong class="d-block small text-uppercase mb-1">הערה</strong>לשהיות ארוכות יותר, בית ספר הוא שאלה רלוונטית. ילדים עם ויזת תייר לא יכולים להירשם לבתי ספר ממלכתיים, אבל בתי ספר פרטיים מקבלים לשהיות של עד חצי שנה. פרטים מלאים במדריך שלנו על <a href="/he/school-short-stay/">בתי ספר בלונדון לשהייה קצרה</a>.</div>
 <!-- source: https://www.gov.uk/guidance/schools-admissions-applications-from-overseas-children -->
 
 <p>לתמונה הרחבה על <a href="/he/london-with-kids/">לונדון עם ילדים - המדריך למשפחות ישראליות</a>.</p>
 <h2>תחבורה ומיקום</h2>
 <p>אחד הדברים שמפתיעים באיזלינגטון: היא בצפון, אבל היא מרכזית. Angel נמצאת ב- Zone 1. מ- Angel ל- King&#39;s Cross - תחנה אחת ב- Northern Line. מ- King&#39;s Cross אתם על ה- Elizabeth Line ל- Heathrow ישר, בלי להחליף.</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>תחנה</th>
@@ -148,7 +149,7 @@
 </ul>
 <p>אבל אם אתם מהסוג שמעדיף מסעדה שכונתית על מסעדה מפורסמת, רחוב עם עצים על שדרה עם חנויות יוקרה, ובית עם אופי על דירה חדשה עם concierge - איזלינגטון שווה ביקור.</p>
 <p>השוואה מהירה למי שעדיין מתלבט:</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th></th>
@@ -202,54 +203,50 @@
 </tr>
 </tbody></table>
 <p><em>המחיר למ&quot;ר מספר את הסיפור. על אותו תקציב, באיזלינגטון מקבלים כמעט כפול שטח.</em></p>
-<hr>
-<div class="callout callout-summary"><span class="callout-label">בקצרה</span><ul><li>מחיר למ&quot;ר באיזלינגטון: 8,300-11,500 פאונד. ב- South Kensington: 16,000-18,000. על אותו תקציב - כמעט כפול שטח</li><li>42 אזורי שימור, 40 עם Article 4 - גם החלפת חלונות דורשת אישור. בפנים? אפשר לעשות מה שרוצים</li><li>Angel ל- King&#39;s Cross - תחנה אחת. משם Elizabeth Line ישר ל- Heathrow</li><li>אין קהילה ישראלית, אין בתי כנסת, אין כשרות. מי שצריך את זה - SJW או גולדרס גרין</li><li>Highbury Fields למשפחות, Little Angel Theatre לילדים, Upper Street למסעדות - שכונה שחיים בה, לא רק גרים</li></ul></div>
+<hr class="my-4">
+<div class="alert alert-light callout"><strong class="d-block small text-uppercase mb-1">בקצרה</strong><ul class="mb-0 mt-2"><li>מחיר למ&quot;ר באיזלינגטון: 8,300-11,500 פאונד. ב- South Kensington: 16,000-18,000. על אותו תקציב - כמעט כפול שטח</li><li>42 אזורי שימור, 40 עם Article 4 - גם החלפת חלונות דורשת אישור. בפנים? אפשר לעשות מה שרוצים</li><li>Angel ל- King&#39;s Cross - תחנה אחת. משם Elizabeth Line ישר ל- Heathrow</li><li>אין קהילה ישראלית, אין בתי כנסת, אין כשרות. מי שצריך את זה - SJW או גולדרס גרין</li><li>Highbury Fields למשפחות, Little Angel Theatre לילדים, Upper Street למסעדות - שכונה שחיים בה, לא רק גרים</li></ul></div>
 <p>מי שרוצה לראות את כל <a href="/he/neighbourhoods-guide/">השכונות שישראלים קונים בהן</a> - שם הכל מסודר. ומי שמתחיל לחשוב על שיפוץ - <a href="/he/renovation-timeline/">ככה זה באמת עובד בלונדון</a>. לניהול פרויקט מישראל, יש <a href="/he/remote-renovation/">מדריך מפורט על שיפוץ מרחוק</a>. ובכל מקרה - <a href="/he/hidden-costs/">תדעו מה מחכה מבחינת עלויות</a> לפני שחותמים.</p>
 
 </main>
 
-<div class="wa-prefooter">
-  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+<div class="container text-center py-5">
+  <button class="btn btn-wa btn-lg" data-bs-toggle="modal" data-bs-target="#wa-modal">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-social">
-      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
-      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
-      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
-      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
+<footer class="pt-5 mt-5">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" style="width:39px;height:39px;opacity:.9"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" style="width:90px;height:84px">
     </div>
-    <div class="footer-links">
-      <a href="/he/useful-tools/">כלים שימושיים</a>
-      <a href="/he/articles/">כל המאמרים</a>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="/he/useful-tools/" class="text-secondary small text-decoration-none">כלים שימושיים</a>
+      <a href="/he/articles/" class="text-secondary small text-decoration-none">כל המאמרים</a>
     </div>
-    <div class="footer-text">
-      <p>סטודיו תמר קריאייטיב</p>
-      <p>לונדון | תל אביב</p>
-    </div>
+    <p class="text-secondary small fw-light mb-1">סטודיו תמר קריאייטיב</p>
+    <p class="text-secondary small fw-light">לונדון | תל אביב</p>
   </div>
 </footer>
 
-<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-  <div class="wa-modal">
-    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
-    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
-    <h3>דברו איתי בוואטסאפ</h3>
-    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
-    <span class="wa-number">+972 54-544-1289</span>
-    <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+<div id="wa-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content text-center p-5">
+      <button type="button" class="btn-close position-absolute top-0 start-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="rounded-circle d-block mx-auto mb-3" style="width:80px;height:80px;object-fit:cover;object-position:center 35%">
+      <h3 class="h5 mb-2">דברו איתי בוואטסאפ</h3>
+      <p class="text-secondary small mb-4">שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+      <span class="d-block mb-4 fs-4 fw-light" style="direction:ltr">+972 54-544-1289</span>
+      <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="btn btn-wa">פתחו שיחה בוואטסאפ</a>
+    </div>
   </div>
 </div>
-<script>
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://wa.me/?text=%D7%90%D7%99%D7%96%D7%9C%D7%99%D7%A0%D7%92%D7%98%D7%95%D7%9F%20%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F%20-%20%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9E%D7%A2%D7%A9%D7%99%20%D7%9C%D7%A7%D7%95%D7%A0%D7%99%D7%9D%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D%0Ahttps%3A%2F%2Ftamarcreative.com%2Fislington%2F" target="_blank" rel="noopener" class="wa-share" aria-label="שתפו בוואטסאפ">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span>שתפו</span>
 </a>
 

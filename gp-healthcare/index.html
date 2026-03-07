@@ -18,26 +18,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/he/assets/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
+<header class="py-3">
+  <div class="container d-flex align-items-center gap-4">
+    <a href="/he/" class="d-block">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav>
-      <a href="/he/neighbourhoods/">שכונות</a>
-      <a href="/he/articles/">מאמרים</a>
-      <a href="/he/about/">אודות</a>
-      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
+    <nav class="d-flex gap-4">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="lang-switch" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
   </div>
 </header>
 
-<main class="container">
+<main class="container article-body">
 <h1>GP ובריאות בלונדון - מדריך מעשי למשפחות ישראליות</h1>
 <h2>מה זה GP ולמה הבריטים עושים את זה ככה</h2>
 <p>בישראל, כשהילד חולה, את פותחת את האפליקציה של קופת החולים ובוחרת רופא ילדים. או רופא עור. או אורתופד. ישר למומחה, בלי לעבור דרך אף אחד.</p>
@@ -52,13 +53,13 @@
 <p>איך זה עובד בפועל:</p>
 <p><strong>שהייה של עד שלושה חודשים</strong> - נרשמים כ-temporary patient. מגיעים למרפאת GP קרובה לדירה, ממלאים טופס קצר (שם, תאריך לידה, כתובת בלונדון), ותוך חמישה ימים אתם רשומים. מגיעים לשלושה שבועות באוגוסט? זה עובד. <!-- source: https://humbersidelmc.org.uk/temporary-patient-registration-overseas-visitors-faqs/ --></p>
 <p><strong>שהייה של יותר משלושה חודשים</strong> - נרשמים כ-permanent patient. אותו תהליך, סטטוס שונה. אם יש לכם settled status או ויזת עבודה, אתם זכאים לכל שירותי ה-NHS בחינם.</p>
-<div class="callout callout-important"><span class="callout-label">חשוב</span>הרישום ל-GP הוא בחינם ופתוח לכולם. מה שעולה כסף למי שלא תושב קבוע הוא טיפול בבית חולים - secondary care. בדיקת GP, ייעוץ, מרשמים - בחינם. הפניה לבית חולים - שם הם בודקים זכאות. <!-- source: https://www.gov.uk/government/publications/nhs-cost-recovery-overseas-visitors/ --></div>
+<div class="alert alert-danger callout"><strong class="d-block small text-uppercase mb-1">חשוב</strong>הרישום ל-GP הוא בחינם ופתוח לכולם. מה שעולה כסף למי שלא תושב קבוע הוא טיפול בבית חולים - secondary care. בדיקת GP, ייעוץ, מרשמים - בחינם. הפניה לבית חולים - שם הם בודקים זכאות. <!-- source: https://www.gov.uk/government/publications/nhs-cost-recovery-overseas-visitors/ --></div>
 <p>שווה להירשם גם אם אתם באים רק לשלושה שבועות. זה נותן לכם גישה ל-NHS App, מרשמים, הפניות - וביטחון שאם משהו קורה, יש לכם רופא.</p>
 <p>איך מוצאים מרפאה? נכנסים לאתר NHS ומחפשים לפי מיקוד (postcode) של הדירה. אפשר גם פשוט לשאול שכנים - בכל שכונה יש מרפאות GP שמוכרות ושאנשים ממליצים עליהן. אם יש לכם חברה ישראלית שגרה באזור, שתשאל בשבילכם מה המרפאה הטובה - זה הדרך הכי מהירה.</p>
 <h2>הילד חולה בלונדון - לאן הולכים</h2>
 <p>שעתיים בלילה. הילד בוער מחום. את בלונדון. מה עושים?</p>
 <p>בישראל, את נוסעת למיון. על כל דבר - חום, הקאה, נפילה מהנדנדה. בלונדון A&amp;E (מיון) הוא באמת רק למקרים דחופים. יש מערכת שלמה שישראלים לא מכירים, והיא עובדת ככה:</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>לאן</th>
@@ -88,7 +89,7 @@
 <p>בלונדון יש גם children&#39;s A&amp;E ייעודיים. Great Ormond Street Hospital הוא בית החולים הגדול לילדים, ויש מחלקות ילדים ייעודיות ברוב בתי החולים הגדולים. שווה לדעת מראש איפה נמצא הקרוב לדירה.</p>
 <p>הכלל: 111 קודם, A&amp;E רק אם אמרו לך. זה חוסך שעות המתנה ונותן טיפול מדויק יותר.</p>
 <p>שפה: ב-NHS 111 ובמרכזי הטיפול יש שירותי תרגום. אם האנגלית שלכם לא חזקה מספיק לתאר סימפטומים רפואיים, אפשר לבקש מתורגמן בטלפון. זה לא אידיאלי, אבל זה עובד. ואם יש לכם חברה ישראלית בלונדון שיכולה לדבר בשבילכם בטלפון - עוד יותר טוב.</p>
-<hr>
+<hr class="my-4">
 <h2>רופא ילדים - איך מגיעים לפדיאטר בלונדון</h2>
 <p>ב-NHS, אין דבר כזה &quot;לקבוע תור אצל רופא ילדים&quot;. ה-GP הוא רופא הילדים שלך לרוב הדברים. בדיקת חום, אוזניים, שיעול, פריחה - הכל דרך ה-GP. אם ה-GP חושב שצריך פדיאטר, הוא מפנה. <!-- source: https://www.nhs.uk/nhs-services/gps/ --></p>
 <p>זה הדבר שהכי מבלבל ישראלים. בישראל רופא ילדים זה הרופא הראשון שלך. את לוקחת את הילד לטיפת חלב, לרופא ילדים בקופה, ולמומחה כשצריך - ותמיד יש רופא ילדים בתמונה. בלונדון, ה-GP הוא הרופא הראשון של כולם - ילדים ומבוגרים כאחד. ה-GP שלכם רואה תינוקות עם חום, מבוגרים עם כאבי גב, ונערים עם אקנה - באותו בוקר.</p>
@@ -100,7 +101,7 @@
 <p><strong>שווה כשצריך מהר.</strong> ה-GP ב-NHS יתן לכם תור תוך יום-יומיים לדברים דחופים, אבל לדברים לא דחופים ההמתנה יכולה להיות שבוע-שבועיים. רופא פרטי? אותו יום, תוך שעות. <!-- source: https://www.theonlinegp.com/blog/same-day-private-gp-london-guide-to-cost-speed-and-care-in-2025 --></p>
 <p><strong>שווה כשצריך מומחה.</strong> אם הילד צריך פדיאטר ולא רוצים לחכות להפניה של ה-GP, אפשר ללכת ישירות לפדיאטר פרטי. בלי הפניה, בלי תהליך. <!-- source: https://goingprivateuk.co.uk/private-paediatrician-uk/ --></p>
 <p><strong>מיותר לרוב הדברים.</strong> חום, שיעול, כאב אוזניים, הקאה - ה-GP מטפל בזה מצוין. אין סיבה לשלם 200 פאונד על מה שתקבלו בחינם.</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>שירות</th>
@@ -138,8 +139,8 @@
 <p><strong>ילדים מתחת לגיל 16 מקבלים תרופות מרשם בחינם.</strong> לא צריך לשלם כלום. מבוגרים משלמים תשלום קבוע של 9.90 פאונד למרשם, לא משנה מה התרופה. <!-- source: https://www.nhs.uk/nhs-services/prescriptions-and-pharmacies/ --></p>
 <p>Boots ו-Superdrug הם הרשתות הגדולות, ויש מרקחות עצמאיות בכל שכונה. רוב המרקחות פתוחות עד 18:00 ביום רגיל, חלק עד 22:00 ובשבתות. Boots בתחנות רכבת גדולות פתוח בשעות ארוכות.</p>
 <p>Calpol (פרצטמול לילדים) ו-Nurofen for Children (איבופרופן) זמינים ללא מרשם בכל מרקחת ובכל סופרמרקט. שווה להחזיק בדירה מלאי בסיסי: Calpol, מדחום, פלסטרים, אנטיהיסטמין לילדים. כשהילד מתעורר עם חום בשלוש בלילה, את לא רוצה לחפש מרקחת פתוחה.</p>
-<div class="callout callout-tip"><span class="callout-label">טיפ</span>אם הילד חולה עם משהו קל - שיעול, חום נמוך, פריחה קלה - לכו למרקחת לפני שקובעים תור ל-GP. לפעמים הרוקח פותר את זה במקום, בחינם, בלי המתנה.</div>
-<hr>
+<div class="alert alert-success callout"><strong class="d-block small text-uppercase mb-1">טיפ</strong>אם הילד חולה עם משהו קל - שיעול, חום נמוך, פריחה קלה - לכו למרקחת לפני שקובעים תור ל-GP. לפעמים הרוקח פותר את זה במקום, בחינם, בלי המתנה.</div>
+<hr class="my-4">
 <h2>ביטוח נסיעות מול ביטוח פרטי - מה באמת מכסה</h2>
 <p>יש לכם דירה בלונדון ואתם מגיעים כמה פעמים בשנה. מה מכסה אתכם מבחינה רפואית?</p>
 <p><strong>ביטוח נסיעות ישראלי (פספורטכארד, הראל, שירביט)</strong> - מכסה מקרי חירום רפואיים. ילד שנפל ושבר יד? מכוסה. אשפוז בעקבות אלרגיה חמורה? מכוסה. ביקור שגרתי אצל GP כי הילד משתעל שבוע? כנראה שלא. ביטוח נסיעות בנוי למקרים חריגים, לא לרפואה שוטפת. תקראו את האותיות הקטנות לפני שמגיעים.</p>
@@ -162,53 +163,49 @@
 <p>כדי להשתמש בו, צריך להיות רשום אצל GP. עוד סיבה להירשם גם אם אתם באים לזמן קצר. אפשר להוריד אותו מ-App Store או Google Play, ולהירשם עם שם, תאריך לידה, וכתובת אימייל. <!-- source: https://digital.nhs.uk/services/nhs-app/nhs-app-features --></p>
 <p>האפליקציה בינתיים רק באנגלית, אבל הממשק פשוט ואינטואיטיבי. אחרי שנרשמתם פעם אחת, הכל שם - ההיסטוריה, התורים, המרשמים. גם אם אתם חוזרים לביקור הבא אחרי חצי שנה.</p>
 <p>טיפ: הורידו את האפליקציה והירשמו ל-GP לפני שמגיעים ללונדון. אם הילד יתעורר חולה ביום הראשון, תהיו מוכנים.</p>
-<div class="callout callout-summary"><span class="callout-label">בקצרה</span><ul><li>כל אדם באנגליה יכול להירשם ל- GP בחינם - גם תיירים, גם לשלושה שבועות. לא צריך דרכון בריטי או הוכחת כתובת</li><li>הילד חולה בלילה? 111 קודם (חינם, 24/7). הם אומרים לכם לאן ללכת. A&amp;E רק למקרה חירום אמיתי</li><li>אין רופא ילדים ישיר ב- NHS. הכל דרך ה- GP. רוצים פדיאטר מהר ובלי הפניה? פרטי, 200-350 פאונד לפגישה ראשונה</li><li>בתי מרקחת בלונדון מאבחנים ונותנים תרופות מרשם בלי רופא (Pharmacy First). תרופות לילדים מתחת ל-16 - חינם</li><li>ביטוח נסיעות מכסה חירום, לא שגרה. מעל חודשיים בשנה בלונדון - שווה לבדוק ביטוח פרטי בריטי (מ-2,000 פאונד/שנה למשפחה)</li></ul></div>
+<div class="alert alert-light callout"><strong class="d-block small text-uppercase mb-1">בקצרה</strong><ul class="mb-0 mt-2"><li>כל אדם באנגליה יכול להירשם ל- GP בחינם - גם תיירים, גם לשלושה שבועות. לא צריך דרכון בריטי או הוכחת כתובת</li><li>הילד חולה בלילה? 111 קודם (חינם, 24/7). הם אומרים לכם לאן ללכת. A&amp;E רק למקרה חירום אמיתי</li><li>אין רופא ילדים ישיר ב- NHS. הכל דרך ה- GP. רוצים פדיאטר מהר ובלי הפניה? פרטי, 200-350 פאונד לפגישה ראשונה</li><li>בתי מרקחת בלונדון מאבחנים ונותנים תרופות מרשם בלי רופא (Pharmacy First). תרופות לילדים מתחת ל-16 - חינם</li><li>ביטוח נסיעות מכסה חירום, לא שגרה. מעל חודשיים בשנה בלונדון - שווה לבדוק ביטוח פרטי בריטי (מ-2,000 פאונד/שנה למשפחה)</li></ul></div>
 <p><a href="../school-short-stay/index.md">כמו שעם בתי ספר</a>, גם עם בריאות - קצת הכנה מראש הופכת שהייה בלונדון ממתח לשגרה. <a href="../london-with-kids/index.md">לונדון עם ילדים</a> זה הרבה יותר קל כשיודעים שאם מישהו מתחיל להשתעל, יש לאן ללכת. הדירה שלכם בלונדון היא לא רק נכס. היא בית שני. ובית שני צריך רופא.</p>
 
 </main>
 
-<div class="wa-prefooter">
-  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+<div class="container text-center py-5">
+  <button class="btn btn-wa btn-lg" data-bs-toggle="modal" data-bs-target="#wa-modal">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-social">
-      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
-      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
-      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
-      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
+<footer class="pt-5 mt-5">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" style="width:39px;height:39px;opacity:.9"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" style="width:90px;height:84px">
     </div>
-    <div class="footer-links">
-      <a href="/he/useful-tools/">כלים שימושיים</a>
-      <a href="/he/articles/">כל המאמרים</a>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="/he/useful-tools/" class="text-secondary small text-decoration-none">כלים שימושיים</a>
+      <a href="/he/articles/" class="text-secondary small text-decoration-none">כל המאמרים</a>
     </div>
-    <div class="footer-text">
-      <p>סטודיו תמר קריאייטיב</p>
-      <p>לונדון | תל אביב</p>
-    </div>
+    <p class="text-secondary small fw-light mb-1">סטודיו תמר קריאייטיב</p>
+    <p class="text-secondary small fw-light">לונדון | תל אביב</p>
   </div>
 </footer>
 
-<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-  <div class="wa-modal">
-    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
-    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
-    <h3>דברו איתי בוואטסאפ</h3>
-    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
-    <span class="wa-number">+972 54-544-1289</span>
-    <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+<div id="wa-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content text-center p-5">
+      <button type="button" class="btn-close position-absolute top-0 start-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="rounded-circle d-block mx-auto mb-3" style="width:80px;height:80px;object-fit:cover;object-position:center 35%">
+      <h3 class="h5 mb-2">דברו איתי בוואטסאפ</h3>
+      <p class="text-secondary small mb-4">שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+      <span class="d-block mb-4 fs-4 fw-light" style="direction:ltr">+972 54-544-1289</span>
+      <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="btn btn-wa">פתחו שיחה בוואטסאפ</a>
+    </div>
   </div>
 </div>
-<script>
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://wa.me/?text=GP%20%D7%95%D7%A8%D7%95%D7%A4%D7%90%20%D7%99%D7%9C%D7%93%D7%99%D7%9D%20%D7%91%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F%20-%20%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%9E%D7%A9%D7%A4%D7%97%D7%95%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%95%D7%AA%0Ahttps%3A%2F%2Ftamarcreative.com%2Fgp-healthcare%2F" target="_blank" rel="noopener" class="wa-share" aria-label="שתפו בוואטסאפ">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span>שתפו</span>
 </a>
 

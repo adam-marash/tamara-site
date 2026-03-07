@@ -18,31 +18,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/he/assets/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
+<header class="py-3">
+  <div class="container d-flex align-items-center gap-4">
+    <a href="/he/" class="d-block">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav>
-      <a href="/he/neighbourhoods/">שכונות</a>
-      <a href="/he/articles/">מאמרים</a>
-      <a href="/he/about/">אודות</a>
-      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
+    <nav class="d-flex gap-4">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="lang-switch" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
   </div>
 </header>
 
-<main class="container">
+<main class="container article-body">
 <h1>נדל"ן בלונדון לישראלים - מה באמת צריך לדעת לפני שקונים</h1>
 <h2>שוק הנדלן בלונדון 2026 - תמונת מצב כנה</h2>
 <p>נדלן בלונדון לישראלים זה נושא שכולם מדברים עליו, אבל מעטים באמת מבינים. בואו נתחיל מהמספרים. מחיר ממוצע של נכס בלונדון עומד על כ-648,000 פאונד, כשהחציון נמוך יותר - 505,000 פאונד. <!-- source: https://www.plumplot.co.uk/London-house-prices.html --> אבל הממוצע הזה לא אומר כלום לישראלי שמחפש דירה שנייה בלונדון. הוא מערבב סטודיו ב- Barking עם בית ב- Chelsea.</p>
 <p>מה שכן רלוונטי: שוק ה- prime central London - האזורים שישראלים בדרך כלל קונים בהם - נמצא 10.3% מתחת לשיא של 2014. <!-- source: https://www.coutts.com/insights/property/coutts-london-prime-property-index-q1-2026.html --> ב- Knightsbridge ו- Belgravia המחירים 29.5% מתחת לשיא. ב- Chelsea - 20.5% מתחת. <!-- source: same --> באזורים רבים המחירים חזרו לרמות של 2013.</p>
-<div class="callout callout-important"><span class="callout-label">חשוב</span>82% מהנכסים ב- prime London נמכרים מתחת למחיר המבוקש. הקונים מצליחים לסגור בממוצע ב-10.3% פחות מהמחיר שפורסם. <!-- source: same --></div>
+<div class="alert alert-danger callout"><strong class="d-block small text-uppercase mb-1">חשוב</strong>82% מהנכסים ב- prime London נמכרים מתחת למחיר המבוקש. הקונים מצליחים לסגור בממוצע ב-10.3% פחות מהמחיר שפורסם. <!-- source: same --></div>
 <p>יש פה הזדמנות אמיתית למי שמגיע עם מזומן ויודע לנהל משא ומתן. ובאותו זמן - לונדון לא בועה שעומדת להתפוצץ. היא כבר ירדה. השאלה היא אם ומתי היא תתאושש.</p>
 <p>Savills צופים עלייה של 1% במחירי prime London ב-2026. <!-- source: https://www.savills.co.uk/research_articles/229130/386389-0 --> אנליסטים אחרים אופטימיים יותר ומדברים על 3-5%. כך או כך, אנחנו לא בסביבה של עליות חדות כמו שתל אביב הרגילה אתכם.</p>
 <h2>מה מקבלים עבור הכסף - דוגמאות אמיתיות</h2>
@@ -54,7 +55,7 @@
 <p>ועוד דבר: שני נכסים באותה שכונה, באותו גודל, יכולים להיות שונים ב-40% במחיר. קומה, כיוון אוויר, period features, אורך חוזה ה- leasehold - כל אלה משנים דרמטית. <a href="/he/leasehold-freehold/">אם אתם לא בטוחים מה זה leasehold ולמה זה קריטי, קראו את המדריך שלנו</a>.</p>
 <h2>סוגי נכסים שישראלים לא מכירים</h2>
 <p>בישראל יש דירה בבניין ויש בית פרטי. בלונדון העולם הרבה יותר מגוון, וכדאי להכיר את הסוגים לפני שמתחילים לחפש.</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>סוג נכס</th>
@@ -105,7 +106,7 @@
 <p>כאן הרבה ישראלים מגלים הפתעות. אז הנה הכל, בצד הבריטי ובצד הישראלי.</p>
 <h3>stamp duty - המס שמרגישים ביום הראשון</h3>
 <p>ישראלי שקונה דירה שנייה בלונדון משלם שלוש שכבות של stamp duty: <!-- source: https://calculatemystampduty.co.uk/rates/england-sdlt-rates-current --></p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>טווח מחיר</th>
@@ -143,15 +144,15 @@
 <p>למה ישראלי משלם יותר? שתי תוספות: 5% על נכס נוסף (additional property surcharge, עלה מ-3% באוקטובר 2024), ו-2% על תושב חוץ (non-resident surcharge). <!-- source: https://www.gov.uk/guidance/rates-of-stamp-duty-land-tax-for-non-uk-residents --></p>
 <p>בפועל: על נכס של 1.5 מיליון פאונד תשלמו כ-198,750 פאונד stamp duty. על 2 מיליון - כ-293,750 פאונד. <!-- calculated from bands: 1.5M = 125k*7% + 125k*9% + 675k*12% + 575k*17% = 8750+11250+81000+97750 = 198750. 2M = 198750 + 500k*19% = 198750+95000 = 293750 --> זה כסף רציני. תחשבו על זה מראש.</p>
 <p>רוצים לחשב את הסכום המדויק? יש <a href="/he/useful-tools/">כלים רשמיים בחינם</a> שעושים את זה - כולל מחשבון stamp duty, בדיקת council tax, ומחירי מכירה אמיתיים.</p>
-<hr>
+<hr class="my-4">
 <h3>capital gains tax - כשמוכרים</h3>
 <p>אם תמכרו את הנכס ברווח, תשלמו capital gains tax: 18% על רווחים בשיעור בסיסי, 24% בשיעור גבוה. <!-- source: https://www.litrg.org.uk/savings-property/capital-gains-tax/non-residents-and-capital-gains-tax --> פטור שנתי של £3,000 בלבד. וחשוב: צריך לדווח ולשלם תוך 60 יום מהמכירה, לא בסוף שנת המס.</p>
-<hr>
+<hr class="my-4">
 <h3>ATED - אם חשבתם לקנות דרך חברה</h3>
 <p>מדי פעם מישהו מציע לישראלים לקנות נכס בלונדון דרך חברה בע&quot;מ. זה כמעט תמיד רעיון רע. ATED (Annual Tax on Enveloped Dwellings) הוא מס שנתי על נכסי מגורים מעל £500,000 שמוחזקים דרך חברה. <!-- source: https://www.gov.uk/guidance/annual-tax-on-enveloped-dwellings-the-basics --> המס יכול להגיע לעשרות אלפי פאונד בשנה. אלא אם כן יש סיבה מאוד ספציפית - קנו כיחידים.</p>
-<hr>
+<hr class="my-4">
 <h3>הצד הישראלי</h3>
-<div class="callout callout-warning"><span class="callout-label">אזהרה</span>יש לכם חובת דיווח לרשות המיסים בישראל על נכס בחו&quot;ל. אם אתם לא מדווחים, אתם בבעיה. תעשו את זה נכון מהיום הראשון.</div>
+<div class="alert alert-warning callout"><strong class="d-block small text-uppercase mb-1">אזהרה</strong>יש לכם חובת דיווח לרשות המיסים בישראל על נכס בחו&quot;ל. אם אתם לא מדווחים, אתם בבעיה. תעשו את זה נכון מהיום הראשון.</div>
 <p>ישראל ובריטניה חתומות על אמנה למניעת כפל מס (משנת 1962, עודכנה ב-2019). <!-- source: https://www.gov.uk/government/publications/israel-tax-treaties --> בגדול, מס ששילמתם בבריטניה מקוזז מהמס הישראלי - אבל צריך לדווח, וצריך רואה חשבון שמבין את שני הצדדים. אל תדלגו על זה.</p>
 <p><a href="/he/hidden-costs/">למידע על כל העלויות השוטפות שמעבר למחיר הרכישה - council tax, service charge, ועוד</a>.</p>
 <h2>מימון - איך ישראלים מממנים את זה</h2>
@@ -169,7 +170,7 @@
 
 <h2>עלות דירה בלונדון - מפת מחירים לפי אזור</h2>
 <p>לא כל לונדון רלוונטית. הנה האזורים שישראלים בדרך כלל מסתכלים עליהם, עם טווחי מחירים ריאליים לדירת 2-3 חדרי שינה:</p>
-<table>
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>אזור</th>
@@ -223,53 +224,49 @@
 <p><strong>התעלמות מאורך ה- leasehold</strong> - דירה עם leasehold של 60 שנה שווה הרבה פחות מדירה זהה עם 999 שנה. זה דבר שישראלים לא מכירים בכלל. <a href="/he/leasehold-freehold/">קראו למה leasehold קריטי לפני שאתם מציעים על נכס</a>.</p>
 <p><strong>הפתעה מה- stamp duty</strong> - ישראלים מחשבים את מס הרכישה (stamp duty) לפי השיעורים הרגילים ושוכחים את שתי התוספות: 5% על נכס נוסף, ו-2% על תושב חוץ. בנכס של 2 מיליון פאונד זה כמעט 294,000 פאונד. תתקצבו.</p>
 <p><strong>חוסר תכנון מס ישראלי</strong> - יש חובת דיווח בישראל. אם אתם לא מדווחים, אתם בבעיה. תעשו את זה נכון מהיום הראשון.</p>
-<div class="callout callout-summary"><span class="callout-label">בקצרה</span><ul><li>prime central London נמצא 10.3% מתחת לשיא של 2014. ב- Knightsbridge ו- Belgravia - 29.5% מתחת. 82% מהנכסים נמכרים מתחת למחיר המבוקש</li><li>stamp duty לישראלי על 1.5 מיליון פאונד: כ-199 אלף פאונד. על 2 מיליון: כ-294 אלף. שיעור רגיל + 5% נכס נוסף + 2% תושב חוץ</li><li>דירה ויקטוריאנית משופצת שומרת על ערכה יותר טוב מ- new build באותו אזור. period features הם חלק מהערך, לא פגם</li><li>שני נכסים באותו גודל ושכונה יכולים להיות שונים ב-40% במחיר - בגלל קומה, כיוון, leasehold ו- period features</li><li>חובת דיווח לרשות המיסים בישראל על נכס בחו&quot;ל. אמנת כפל מס קיימת, אבל צריך רו&quot;ח שמבין את שני הצדדים</li></ul></div>
+<div class="alert alert-light callout"><strong class="d-block small text-uppercase mb-1">בקצרה</strong><ul class="mb-0 mt-2"><li>prime central London נמצא 10.3% מתחת לשיא של 2014. ב- Knightsbridge ו- Belgravia - 29.5% מתחת. 82% מהנכסים נמכרים מתחת למחיר המבוקש</li><li>stamp duty לישראלי על 1.5 מיליון פאונד: כ-199 אלף פאונד. על 2 מיליון: כ-294 אלף. שיעור רגיל + 5% נכס נוסף + 2% תושב חוץ</li><li>דירה ויקטוריאנית משופצת שומרת על ערכה יותר טוב מ- new build באותו אזור. period features הם חלק מהערך, לא פגם</li><li>שני נכסים באותו גודל ושכונה יכולים להיות שונים ב-40% במחיר - בגלל קומה, כיוון, leasehold ו- period features</li><li>חובת דיווח לרשות המיסים בישראל על נכס בחו&quot;ל. אמנת כפל מס קיימת, אבל צריך רו&quot;ח שמבין את שני הצדדים</li></ul></div>
 <p><a href="/he/before-you-sign/">לפני שאתם חותמים על נכס, יש רשימת בדיקות שחשוב לעבור</a>. ואם אתם רוצים להבין את תהליך הרכישה עצמו - <a href="/he/buying-process/">כך קונים נכס בלונדון, צעד אחרי צעד</a>.</p>
 
 </main>
 
-<div class="wa-prefooter">
-  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+<div class="container text-center py-5">
+  <button class="btn btn-wa btn-lg" data-bs-toggle="modal" data-bs-target="#wa-modal">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-social">
-      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
-      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
-      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
-      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
+<footer class="pt-5 mt-5">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" style="width:39px;height:39px;opacity:.9"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" style="width:90px;height:84px">
     </div>
-    <div class="footer-links">
-      <a href="/he/useful-tools/">כלים שימושיים</a>
-      <a href="/he/articles/">כל המאמרים</a>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="/he/useful-tools/" class="text-secondary small text-decoration-none">כלים שימושיים</a>
+      <a href="/he/articles/" class="text-secondary small text-decoration-none">כל המאמרים</a>
     </div>
-    <div class="footer-text">
-      <p>סטודיו תמר קריאייטיב</p>
-      <p>לונדון | תל אביב</p>
-    </div>
+    <p class="text-secondary small fw-light mb-1">סטודיו תמר קריאייטיב</p>
+    <p class="text-secondary small fw-light">לונדון | תל אביב</p>
   </div>
 </footer>
 
-<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-  <div class="wa-modal">
-    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
-    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
-    <h3>דברו איתי בוואטסאפ</h3>
-    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
-    <span class="wa-number">+972 54-544-1289</span>
-    <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+<div id="wa-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content text-center p-5">
+      <button type="button" class="btn-close position-absolute top-0 start-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="rounded-circle d-block mx-auto mb-3" style="width:80px;height:80px;object-fit:cover;object-position:center 35%">
+      <h3 class="h5 mb-2">דברו איתי בוואטסאפ</h3>
+      <p class="text-secondary small mb-4">שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+      <span class="d-block mb-4 fs-4 fw-light" style="direction:ltr">+972 54-544-1289</span>
+      <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="btn btn-wa">פתחו שיחה בוואטסאפ</a>
+    </div>
   </div>
 </div>
-<script>
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://wa.me/?text=%D7%A0%D7%93%D7%9C%D7%9F%20%D7%91%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F%20%D7%9C%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D%20-%20%D7%9E%D7%97%D7%99%D7%A8%D7%99%D7%9D%2C%20%D7%9E%D7%99%D7%A1%D7%95%D7%99%20%D7%95%D7%9E%D7%94%20%D7%91%D7%90%D7%9E%D7%AA%20%D7%9E%D7%A7%D7%91%D7%9C%D7%99%D7%9D%0Ahttps%3A%2F%2Ftamarcreative.com%2Freal-estate-for-israelis%2F" target="_blank" rel="noopener" class="wa-share" aria-label="שתפו בוואטסאפ">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span>שתפו</span>
 </a>
 

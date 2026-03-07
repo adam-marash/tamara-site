@@ -18,26 +18,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/he/assets/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/he/assets/site.css">
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="/he/" class="logo-link">
-      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" class="logo">
+<header class="py-3">
+  <div class="container d-flex align-items-center gap-4">
+    <a href="/he/" class="d-block">
+      <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav>
-      <a href="/he/neighbourhoods/">שכונות</a>
-      <a href="/he/articles/">מאמרים</a>
-      <a href="/he/about/">אודות</a>
-      <a href="#" onclick="document.getElementById('wa-modal').classList.add('active');return false">צרו קשר</a>
+    <nav class="d-flex gap-4">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="lang-switch" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
   </div>
 </header>
 
-<main class="container">
+<main class="container article-body">
 <h1>מבנה רשום בלונדון - מתי אסור לגעת בכלום</h1>
 <h2>מה זה בכלל listed building</h2>
 <p>קניתם בית ויקטוריאני יפהפה ב- Hampstead. שילמתם עליו מחיר שלא כדאי לדבר עליו. עכשיו אתם רוצים לפתוח את המטבח, להוסיף חדר אמבטיה, להחליף חלונות. הפתעה: יכול להיות שאסור לכם.</p>
@@ -98,52 +99,48 @@
 <p>האתגר הגדול היה מיזוג אוויר. ב-Grade I לא מרשים יחידות חיצוניות על הבניין. אי אפשר לשים מזגן ספליט על קיר חיצוני של מבנה בן מאתיים שנה. בלונדון, מיזוג הוא לא מותרות - זה נחוץ, במיוחד כשמשפחה עם ילדים מגיעה באוגוסט ובדירה אין מרפסת פתוחה. הפתרון: מערכת פנימית שקטה שלא דורשת שום אלמנט חיצוני. זה דרש תכנון, יצירתיות, ועבודה עם יועצים שמכירים את המערכת. אבל זה עובד.</p>
 <p>התוצאה: דירה מודרנית, מלאת אור, עם נוף לפארק - שמכבדת את ההיסטוריה של המבנה בלי להרגיש כמו מוזיאון. אורחים שמגיעים לא תמיד מבינים שזה Grade I. וזו בדיוק הנקודה. שיפוץ טוב ב-listed building לא נראה כמו פשרה. הוא נראה כמו בית.</p>
 <p>זה בדיוק הקטע. listed building לא אומר שאי אפשר ליצור בית מודרני ונוח. זה אומר שצריך לדעת איך.</p>
-<div class="callout callout-summary"><span class="callout-label">בקצרה</span><ul><li>כ-500,000 מבנים רשומים באנגליה. 92% הם Grade II - יש הגבלות אבל גם גמישות. כ-90% מבקשות ה- consent מאושרות</li><li>עבודה ב- listed building בלי consent היא עבירה פלילית - קנס עד ללא הגבלה ומאסר עד שנתיים. אין התיישנות</li><li>Conservation area מגביל מבחוץ בלבד. Listed building מגביל גם בפנים - כל קיר, כל חלון, כל פרט מקורי</li><li>Listed building consent הוא בחינם ולוקח שמונה שבועות. תהליך נפרד מ- planning permission - לפעמים צריך שניהם</li><li>Like-for-like בדרך כלל לא דורש אישור. תיקון חלון עם אותם חומרים - בסדר. החלפה באלומיניום חדש - צריך consent</li></ul></div>
+<div class="alert alert-light callout"><strong class="d-block small text-uppercase mb-1">בקצרה</strong><ul class="mb-0 mt-2"><li>כ-500,000 מבנים רשומים באנגליה. 92% הם Grade II - יש הגבלות אבל גם גמישות. כ-90% מבקשות ה- consent מאושרות</li><li>עבודה ב- listed building בלי consent היא עבירה פלילית - קנס עד ללא הגבלה ומאסר עד שנתיים. אין התיישנות</li><li>Conservation area מגביל מבחוץ בלבד. Listed building מגביל גם בפנים - כל קיר, כל חלון, כל פרט מקורי</li><li>Listed building consent הוא בחינם ולוקח שמונה שבועות. תהליך נפרד מ- planning permission - לפעמים צריך שניהם</li><li>Like-for-like בדרך כלל לא דורש אישור. תיקון חלון עם אותם חומרים - בסדר. החלפה באלומיניום חדש - צריך consent</li></ul></div>
 
 </main>
 
-<div class="wa-prefooter">
-  <button class="wa-cta-btn" onclick="document.getElementById('wa-modal').classList.add('active')">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
+<div class="container text-center py-5">
+  <button class="btn btn-wa btn-lg" data-bs-toggle="modal" data-bs-target="#wa-modal">שאלה על נכס בלונדון? דברו איתי בוואטסאפ</button>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-social">
-      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
-      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
-      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
-      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
-      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" class="houzz-badge">
+<footer class="pt-5 mt-5">
+  <div class="container text-center">
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" style="width:39px;height:39px;opacity:.9"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" style="width:39px;height:39px;opacity:.9"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 - עיצוב" style="width:90px;height:84px">
     </div>
-    <div class="footer-links">
-      <a href="/he/useful-tools/">כלים שימושיים</a>
-      <a href="/he/articles/">כל המאמרים</a>
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="/he/useful-tools/" class="text-secondary small text-decoration-none">כלים שימושיים</a>
+      <a href="/he/articles/" class="text-secondary small text-decoration-none">כל המאמרים</a>
     </div>
-    <div class="footer-text">
-      <p>סטודיו תמר קריאייטיב</p>
-      <p>לונדון | תל אביב</p>
-    </div>
+    <p class="text-secondary small fw-light mb-1">סטודיו תמר קריאייטיב</p>
+    <p class="text-secondary small fw-light">לונדון | תל אביב</p>
   </div>
 </footer>
 
-<div id="wa-modal" class="wa-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
-  <div class="wa-modal">
-    <button class="wa-modal-close" onclick="document.getElementById('wa-modal').classList.remove('active')">&times;</button>
-    <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="wa-modal-photo">
-    <h3>דברו איתי בוואטסאפ</h3>
-    <p>שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
-    <span class="wa-number">+972 54-544-1289</span>
-    <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="wa-open-btn">פתחו שיחה בוואטסאפ</a>
+<div id="wa-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content text-center p-5">
+      <button type="button" class="btn-close position-absolute top-0 start-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img src="/he/about/images/tamar-headshot.jpg" alt="תמר מרש" class="rounded-circle d-block mx-auto mb-3" style="width:80px;height:80px;object-fit:cover;object-position:center 35%">
+      <h3 class="h5 mb-2">דברו איתי בוואטסאפ</h3>
+      <p class="text-secondary small mb-4">שאלות על נכס, שכונות, שיפוץ - על הכל אפשר לדבר</p>
+      <span class="d-block mb-4 fs-4 fw-light" style="direction:ltr">+972 54-544-1289</span>
+      <a href="https://wa.me/972545441289" target="_blank" rel="noopener" class="btn btn-wa">פתחו שיחה בוואטסאפ</a>
+    </div>
   </div>
 </div>
-<script>
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') { var m = document.getElementById('wa-modal'); if (m) m.classList.remove('active'); }
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <a href="https://wa.me/?text=Listed%20building%20%D7%91%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F%20-%20%D7%9E%D7%91%D7%A0%D7%94%20%D7%A8%D7%A9%D7%95%D7%9D%2C%20%D7%9E%D7%94%20%D7%9E%D7%95%D7%AA%D7%A8%20%D7%95%D7%9E%D7%94%20%D7%90%D7%A1%D7%95%D7%A8%0Ahttps%3A%2F%2Ftamarcreative.com%2Flisted-buildings%2F" target="_blank" rel="noopener" class="wa-share" aria-label="שתפו בוואטסאפ">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span>שתפו</span>
 </a>
 
