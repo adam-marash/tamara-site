@@ -25,6 +25,16 @@ header {
 .logo-link { display: block; }
 .logo { height: 65px; width: auto; }
 nav { display: flex; gap: 32px; }
+.lang-switch {
+  margin-inline-start: auto;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.lang-switch:hover { color: #c88a2e; }
 nav a {
   color: #666;
   text-decoration: none;
@@ -200,6 +210,20 @@ footer {
   margin: 0;
 }
 .social-icon:hover { opacity: 1; }
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.footer-links a {
+  color: #717070;
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
 .footer-text p {
   color: #717070;
   font-size: 13px;
@@ -253,7 +277,6 @@ footer {
 /* Homepage - Slider */
 .swiper {
   width: 100%;
-  max-width: 980px;
   height: 636px;
   margin: 0 auto;
 }
