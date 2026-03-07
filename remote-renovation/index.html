@@ -121,6 +121,26 @@
   }
   pre code { background: none; padding: 0; }
 
+  /* About page layout */
+  .about-top {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .about-top img {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+  }
+  .about-top .about-text p { margin-bottom: 14px; }
+  @media (max-width: 600px) {
+    .about-top { flex-direction: column; }
+    .about-top img { width: 160px; min-width: 160px; max-width: 160px; }
+  }
+
   /* Footer */
   footer {
     background: #fff;
@@ -222,7 +242,7 @@
     </a>
     <nav>
       <a href="/he/">מאמרים</a>
-      <a href="https://www.tamarcreative.com/about">אודות</a>
+      <a href="/he/about/">אודות</a>
       <a href="https://www.tamarcreative.com/contact">צרו קשר</a>
     </nav>
   </div>

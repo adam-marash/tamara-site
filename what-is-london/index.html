@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מה זה בעצם ״לונדון״ - העיר שהיא לא עיר | Tamar Creative</title>
+<meta name="title" content="מה זה בורו בלונדון - למה זה משנה לקונים ישראלים">
+<meta name="description" content="איך לונדון עובדת - 33 רשויות מקומיות (boroughs) עם חוקי תכנון, council tax ובתי ספר שונים לגמרי. מה כל ישראלי שקונה נכס בלונדון חייב לדעת על הבורו שלו">
+<meta property="og:type" content="article">
+<meta property="og:title" content="מה זה בורו בלונדון - למה זה משנה לקונים ישראלים">
+<meta property="og:description" content="איך לונדון עובדת - 33 רשויות מקומיות (boroughs) עם חוקי תכנון, council tax ובתי ספר שונים לגמרי. מה כל ישראלי שקונה נכס בלונדון חייב לדעת על הבורו שלו">
+<meta property="og:site_name" content="Tamar Creative">
+<link rel="icon" type="image/png" href="/he/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.8;
+    color: #717070;
+    background: #fff;
+    direction: rtl;
+  }
+
+  /* Header */
+  header {
+    height: 116px;
+  }
+  .header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    height: 100%;
+  }
+  .logo-link { display: block; }
+  .logo { height: 65px; width: auto; }
+  nav { display: flex; gap: 32px; }
+  nav a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #c88a2e; }
+
+  /* Article */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #717070;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #717070;
+    margin: 40px 0 16px;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #717070;
+    margin: 28px 0 10px;
+  }
+  p { margin-bottom: 18px; color: #717070; }
+  ul, ol {
+    margin-bottom: 18px;
+    padding-right: 24px;
+  }
+  li { margin-bottom: 8px; color: #717070; }
+  blockquote {
+    border-right: 3px solid #c88a2e;
+    padding: 16px 24px;
+    margin: 24px 0;
+    color: #666;
+    background: #fafafa;
+  }
+  img { max-width: 100%; height: auto; margin: 20px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid #e8e8e8;
+    text-align: right;
+    font-size: 14px;
+    color: #717070;
+  }
+  th { background: #fafafa; font-weight: 500; color: #717070; }
+  a { color: #c88a2e; text-decoration: none; }
+  a:hover { color: #a06e1a; }
+  code { background: #f5f5f5; padding: 2px 6px; font-size: 14px; }
+  pre {
+    background: #2a2a2a;
+    color: #e8e8e8;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 2px;
+  }
+  pre code { background: none; padding: 0; }
+
+  /* About page layout */
+  .about-top {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .about-top img {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+  }
+  .about-top .about-text p { margin-bottom: 14px; }
+  @media (max-width: 600px) {
+    .about-top { flex-direction: column; }
+    .about-top img { width: 160px; min-width: 160px; max-width: 160px; }
+  }
+
+  /* Footer */
+  footer {
+    background: #fff;
+    padding: 40px 0;
+    margin-top: 64px;
+  }
+  .footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .houzz-badge { width: 90px; height: 84px; margin: 0; }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    width: 39px;
+    height: 39px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    margin: 0;
+  }
+  .social-icon:hover { opacity: 1; }
+  .footer-text p {
+    color: #717070;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+
+  /* Index page */
+  .index-intro {
+    max-width: 720px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+  }
+  .index-intro h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+  .index-intro p {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 0;
+  }
+  .article-list {
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+    list-style: none;
+  }
+  .article-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+    margin: 0;
+  }
+  .article-list a {
+    color: #717070;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .article-list a:hover { color: #c88a2e; }
+  .article-meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+  .empty {
+    max-width: 720px;
+    margin: 48px auto;
+    padding: 0 24px;
+    color: #999;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .header-inner { flex-direction: column; gap: 12px; }
+    .logo { height: 48px; }
+    nav { gap: 20px; }
+    h1 { font-size: 24px; }
+    .container { padding: 32px 16px 48px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/he/" class="logo-link">
+      <img src="/he/assets/logo.png" alt="Tamar Creative - Interior Design" class="logo">
+    </a>
+    <nav>
+      <a href="/he/">מאמרים</a>
+      <a href="/he/about/">אודות</a>
+      <a href="https://www.tamarcreative.com/contact">צרו קשר</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<h2>לונדון היא לא עיר - היא 33 עיריות</h2>
+<p>בישראל, תל אביב זו תל אביב. עירייה אחת, תעריף ארנונה אחד, מערכת חוקי בנייה אחת. אתם קונים דירה בצפון העיר או בדרום - אותם חוקים, אותו מבנה.</p>
+<p>לונדון? לא ככה.</p>
+<p>לונדון מחולקת ל-32 boroughs - רשויות מקומיות עצמאיות - בתוספת City of London, שהיא סיפור בפני עצמו. כל borough הוא למעשה עירייה נפרדת עם ראש עיר, מועצה, תקציב ומערכת חוקים משלו. <!-- source: https://en.wikipedia.org/wiki/London_boroughs --></p>
+<p>הבריטים בנו את זה ככה ב-1965, וזה עובד. פחות או יותר. <!-- source: https://en.wikipedia.org/wiki/London_Government_Act_1963 --></p>
+<p>למה זה משנה לכם? כי כשאתם קונים נכס ב- Hampstead, אתם לא קונים &quot;בלונדון&quot;. אתם קונים ב- לונדון בורו של Camden. וכשהחבר שלכם קונה ב- St John&#39;s Wood - הוא קונה ב- Westminster. שני רחובות מרחק, שתי עיריות שונות, חוקים שונים.</p>
+<h2>מה זה borough ולמה זה משנה לכם</h2>
+<p>borough הוא הרשות המקומית שמנהלת את החיים ביום יום. זו לא סתם חלוקה על המפה. ה-borough קובע:</p>
+<ul>
+<li>כמה council tax אתם משלמים (ארנונה, בגדול)</li>
+<li>אם ואיך תוכלו להרחיב את הנכס - כל ה-planning permission עובר דרך ה-borough</li>
+<li>לאיזה בתי ספר הילדים שלכם שייכים</li>
+<li>מי אוסף את האשפה ומתי</li>
+<li>איזו ספרייה, פארקים ושירותי רווחה זמינים</li>
+</ul>
+<p>זה לא ביורוקרטיה יבשה. זה משפיע על כמה תשלמו כל חודש, מה תוכלו לעשות עם הנכס, ואיך החיים של המשפחה ייראו כשתגיעו לקיץ.</p>
+<h2>City of London - הסיפור המוזר</h2>
+<p>יש דבר שמבלבל את כולם, גם בריטים: City of London היא לא לונדון.</p>
+<p>City of London זה שטח קטן של בערך מייל מרובע אחד במרכז - ה-Square Mile כמו שקוראים לו - הגרעין ההיסטורי שהרומאים הקימו לפני כמעט 2,000 שנה. גרים שם פחות מ-9,000 בני אדם. <!-- source: https://en.wikipedia.org/wiki/City_of_London --></p>
+<p>יש לה משטרה משלה, ראש עיר משלה (Lord Mayor - לא לבלבל עם Mayor of London), ומערכת שלטון שלא קיימת בשום מקום אחר בבריטניה. בעיקר מרכז פיננסי - בנק אוף אינגלנד, בתי השקעות, חברות ביטוח.</p>
+<p>אם אתם לא קונים משרד במיל הפיננסי, City of London לא ממש רלוונטית לכם. אבל טוב לדעת שהיא קיימת, כי אנשים מתבלבלים בין זה לבין &quot;לונדון&quot; ואפילו סוכני נדלן לפעמים לא מדייקים.</p>
+<p>עוד דבר שחשוב להבין: כשמישהו אומר &quot;מרכז לונדון&quot; הוא לא מתכוון ל- City of London. הוא בדרך כלל מתכוון ל- Westminster, ל- Camden, או ל- Kensington &amp; Chelsea. אלה boroughs רגילים עם דיור למגורים. City of London היא משהו אחר לגמרי.</p>
+<h2>Greater London Authority - מי באמת מנהל את זה</h2>
+<p>מעל כל 33 הרשויות המקומיות יושבת Greater London Authority - ה-GLA. זו המסגרת שמחברת את כל הבורואים יחד תחת Mayor of London ורשות אחת.</p>
+<p>אבל אל תתבלבלו - ה-Mayor of London לא מנהל את לונדון כמו שראש עיר מנהל עיר בישראל. הסמכויות שלו מוגבלות. הוא אחראי על תחבורה (Transport for London - ה-TfL שמפעיל את האנדרגראונד והאוטובוסים), שיטור ברמה אסטרטגית, תכנון כולל ודיור. <!-- source: https://www.london.gov.uk/who-we-are/how-we-work-london --></p>
+<p>את רוב הדברים שמשפיעים על החיים שלכם ביום יום - council tax, אישורי בנייה, בתי ספר, אשפה, שירותים חברתיים - מנהל ה-borough. לא ה-Mayor, לא ה-GLA.</p>
+<p>בפועל: כשתרצו להגיש בקשה ל-planning permission, תדברו עם ה-borough council. כשתרצו להבין כמה council tax תשלמו, תבדקו באתר של ה-borough. כשתחפשו בית ספר לילדים - ה-borough.</p>
+<p>ה-GLA קובע כיוון כללי. ה-borough קובע מה קורה ברחוב שלכם. ולכן, כשאתם חוקרים נכס בלונדון, ה-borough הוא הכתובת הנכונה לכל השאלות הפרקטיות.</p>
+<h2>מה ה-borough קובע בפועל</h2>
+<p>בואו נדבר תכלס. מספרים.</p>
+<p><strong>Council tax</strong> - הארנונה הלונדונית. ב- Wandsworth, אחד הבורואים הזולים, משלמים בערך £990 בשנה על Band D. ב- Kingston, הכי יקר בלונדון, משלמים £2,608. <!-- source: https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2025-to-2026 --> כמעט פי שלושה. על אותו סוג נכס. ההבדל היחיד - באיזה צד של הרחוב אתם עומדים.</p>
+<p><a href="/real-costs-beyond-purchase">לקריאה נוספת על כל העלויות שמעבר למחיר הרכישה</a></p>
+<p><strong>Planning permission</strong> - אישורי בנייה ושיפוץ. כל borough מחליט לבד מה מותר ומה אסור. יש boroughs כמו Westminster ו- Kensington &amp; Chelsea שכמעט כל רחוב שם הוא conservation area - אזור שמור. זה אומר שאי אפשר להחליף חלון בלי אישור. <!-- source: https://architectureforlondon.com/news/conservation-area-consent-london/ --></p>
+<p>ב-boroughs אחרים, ב- outer London, יש הרבה יותר חופש לשפץ ולהרחיב תחת permitted development - זכויות בנייה שלא דורשות אישור מיוחד.</p>
+<p><a href="/planning-permission-london">למדריך המלא על planning permission בלונדון</a></p>
+<p><strong>בתי ספר</strong> - אם המשפחה מגיעה לתקופות ארוכות, ה-borough קובע את אזורי הרישום. כל borough מנהל את מערכת בתי הספר שלו בנפרד, עם מדיניות קבלה שונה. אפילו כרטיס ספרייה הוא ברמת ה-borough - כרטיס של Camden לא עובד ב- Westminster.</p>
+<p><strong>תחבורה</strong> - נכון, ה-Tube וה-Overground הם ברמת לונדון כולה (TfL). אבל חנייה? חנייה זה borough. תושב של borough אחד לא יכול לקנות תו חנייה של borough שכן. גם רגולציית אזורי פליטות ותשתיות אופניים משתנות מבורו לבורו.</p>
+<p><strong>אשפה ומיחזור</strong> - נשמע טריוויאלי, אבל כשתגורו בדירה בלונדון תגלו שזה מורכב. כל borough קובע ימי איסוף שונים, מערכת מיחזור שונה, ואפילו צבעי פחים שונים. אם יש לכם נכס להשכרה, אתם אחראים שהשוכרים עומדים בכללים של ה-borough הספציפי.</p>
+<h2>דוגמאות שמשנות את התמונה</h2>
+<p>כל מה שדיברנו עליו עד עכשיו נשמע תיאורטי? הנה מה שקורה בפועל כשישראלים מסתכלים על נכסים. ההבדלים בין boroughs הם לא אקדמיים - הם משפיעים על הארנק, על התוכניות ועל איכות החיים:</p>
+<p><strong>Camden לעומת Westminster</strong> - שני boroughs שגובלים אחד בשני. Hampstead ו- Primrose Hill הם ב- Camden. St John&#39;s Wood ו- Marylebone הם ב- Westminster. שכונות שנראות דומות על המפה, אבל ה-council tax שונה, חוקי התכנון שונים, ורמת ההגנה על מבנים היסטוריים שונה. ישראלי שמסתכל על דירה ב- Primrose Hill ודירה ב- St John&#39;s Wood חושב שהוא משווה שתי דירות באותה עיר. הוא לא. הוא משווה שתי דירות בשתי עיריות שונות.</p>
+<p><strong>Barnet</strong> - הרבה ישראלים מכירים את Golders Green ו- Hendon. שניהם ב- borough של Barnet. זה outer London borough, ובדרך כלל יש יותר גמישות בתכנון ובנייה מאשר ב- inner London. הקהילה היהודית והישראלית שם חזקה, יש מסעדות ומאפיות שמרגישות כמו בבית, ו-council tax סביר יחסית. אבל זה מרוחק מ- central London - משהו שקונה שרגיל לחשוב על &quot;לונדון&quot; כ- West End לא תמיד שם לב אליו.</p>
+<p><a href="/neighbourhoods-israelis-buy">לסקירה מלאה של השכונות שישראלים קונים בהן</a></p>
+<p><strong>Kensington &amp; Chelsea</strong> - הבורו היוקרתי. South Kensington, Notting Hill, Chelsea. מחירים גבוהים, council tax יחסית סביר, אבל כמעט בלתי אפשרי לקבל planning permission על שינויים חיצוניים. כל חזית בניין שם שמורה. רוצים להוסיף מרפסת? לשנות צבע של דלת כניסה? תתכוננו לתהליך ארוך.</p>
+<p><strong>Westminster</strong> - אחד הבורואים הגדולים והמגוונים. כולל שכונות כמו Marylebone ו- St John&#39;s Wood שפופולריות מאוד בקרב ישראלים, אבל גם את Mayfair ו- Soho. council tax ב- Westminster נמוך יחסית, אבל ההגבלות על שיפוצים באזורי conservation area נוקשות. <a href="/buying-property-in-london">כדאי להבין את תהליך הרכישה</a> לפני שמתחילים לחפש.</p>
+<h2>מה לבדוק לפני שקונים</h2>
+<p>לפני שחותמים על נכס בלונדון, תבדקו את ה-borough. זה לא פחות חשוב מלבדוק את הנכס עצמו:</p>
+<ol>
+<li><strong>Council tax</strong> - כמה משלמים על הנכס הספציפי. אפשר לבדוק באתר של ה-borough. זכרו - ההבדל יכול להיות אלפי פאונדים בשנה</li>
+<li><strong>Conservation area</strong> - האם הנכס באזור שמור. זה משנה את כל מה שתוכלו לעשות איתו. אם חלמתם על תוספת בנייה או שינויים בחזית, conservation area יכול לשנות לכם את כל התוכנית</li>
+<li><strong>Planning history</strong> - מה אושר ומה נדחה ברחוב שלכם. נותן תמונה של עד כמה ה-borough מחמיר. אפשר לחפש את זה באתר של ה-borough council תחת planning applications</li>
+<li><strong>Article 4 directions</strong> - האם ה-borough הוציא הוראות מיוחדות שמבטלות זכויות בנייה סטנדרטיות. זה קורה הרבה ב- inner London boroughs</li>
+<li><strong>שירותים מקומיים</strong> - פארקים, ספריות, מרפאות GP, מרכזי ילדים. אם המשפחה מגיעה לחודש באוגוסט, אלה הדברים שיקבעו אם הילדים נהנים או משועממים</li>
+<li><strong>תחבורה</strong> - כמה תחנות רכבת או Tube קרובות. זה לא ברמת ה-borough, אבל ה-borough משפיע על חניית תושבים ותשתיות מקומיות</li>
+</ol>
+<p><a href="/what-to-check-before-buying">לרשימת הבדיקות המלאה לפני חתימה על נכס</a></p>
+<p>כל המידע הזה זמין בחינם באתרי ה-borough councils. חמש דקות באתר של ה-borough יכולות לחסוך לכם הפתעות של עשרות אלפי פאונדים.</p>
+<p>הבורו שלכם הוא לא פרט טכני. הוא מגדיר כמה תשלמו, מה תוכלו לבנות, ואיך המשפחה תחווה את לונדון. <a href="/managing-renovation-remotely">אם אתם מנהלים את הפרויקט מישראל</a> - הבורו משפיע גם על מה אפשר לעשות מרחוק ומה דורש נוכחות.</p>
+<p>כשמישהו אומר לכם &quot;קניתי דירה בלונדון&quot; - תשאלו באיזה borough. כי לונדון היא לא עיר אחת. היא 33. ואיך לונדון עובדת - מארנונה ועד אישורי בנייה, מבתי ספר ועד אשפה - משתנה מבורו לבורו. ברגע שמבינים את זה, הרבה דברים שנראים מוזרים בלונדון מתחילים להיות הגיוניים.</p>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-social">
+      <a href="https://www.houzz.co.uk/pro/tamarcreative" target="_blank" rel="noopener"><img src="/he/assets/houzz-icon.png" alt="houzz" class="social-icon"></a>
+      <a href="https://www.pinterest.co.uk/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/pinterest-icon.png" alt="pinterest" class="social-icon"></a>
+      <a href="https://www.facebook.com/TamarCreativeStudio" target="_blank" rel="noopener"><img src="/he/assets/facebook-icon.png" alt="facebook" class="social-icon"></a>
+      <a href="https://www.instagram.com/tamarcreativestudio/" target="_blank" rel="noopener"><img src="/he/assets/instagram-icon.png" alt="instagram" class="social-icon"></a>
+      <img src="/he/assets/houzz-badge.png" alt="Best of Houzz 2024 Design" class="houzz-badge">
+    </div>
+    <div class="footer-text">
+      <p>סטודיו תמר קריאייטיב</p>
+      <p>לונדון | תל אביב</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

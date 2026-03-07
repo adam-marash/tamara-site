@@ -118,6 +118,26 @@
   }
   pre code { background: none; padding: 0; }
 
+  /* About page layout */
+  .about-top {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .about-top img {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+  }
+  .about-top .about-text p { margin-bottom: 14px; }
+  @media (max-width: 600px) {
+    .about-top { flex-direction: column; }
+    .about-top img { width: 160px; min-width: 160px; max-width: 160px; }
+  }
+
   /* Footer */
   footer {
     background: #fff;
@@ -228,6 +248,55 @@
   }
   .swiper-button-next, .swiper-button-prev { color: #fff; }
   .swiper-pagination-bullet-active { background: #c88a2e; }
+
+  /* Intro paragraph */
+  .intro-text {
+    max-width: 800px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .intro-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #717070;
+  }
+
+  /* Service boxes */
+  .services {
+    max-width: 960px;
+    margin: 48px auto 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+  }
+  .service-box {
+    text-align: center;
+  }
+  .service-box img {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 16px;
+    display: block;
+    object-fit: contain;
+    opacity: 0.65;
+  }
+  .service-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717070;
+    margin: 0 0 8px;
+  }
+  .service-box p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #999;
+    margin: 0;
+  }
+  @media (max-width: 600px) {
+    .services { grid-template-columns: 1fr; gap: 32px; }
+  }
 </style>
 </head>
 <body>
@@ -239,7 +308,7 @@
     </a>
     <nav>
       <a href="/he/">מאמרים</a>
-      <a href="https://www.tamarcreative.com/about">אודות</a>
+      <a href="/he/about/">אודות</a>
       <a href="https://www.tamarcreative.com/contact">צרו קשר</a>
     </nav>
   </div>
@@ -254,11 +323,70 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 </div>
+<div class="intro-text">
+  <p>סטודיו תמר קריאייטיב מלווה ישראלים שקונים, משפצים ומעצבים נכס בלונדון. מייעוץ ראשוני על שכונות ובדיקת נכסים, דרך תכנון אדריכלי ועיצוב פנים, ועד ניהול שיפוץ מלא מרחוק - עם צוות מקצועי על הקרקע ותקשורת בעברית לכל אורך הדרך.</p>
+</div>
+<div class="services">
+  <div class="service-box">
+    <img src="/he/assets/icons/floorplan.png" alt="">
+    <h3>תכנון ועיצוב פנים</h3>
+    <p>מתכנון ראשוני ותקצוב דרך ניהול שיפוץ, עיצוב פנים וסטיילינג. כל הפרטים מנוהלים - מתיאום קבלנים ועד תליית התמונה האחרונה על הקיר.</p>
+  </div>
+  <div class="service-box">
+    <img src="/he/assets/icons/monitor.png" alt="">
+    <h3>ניהול פרויקט מרחוק</h3>
+    <p>ניהול שיפוץ ועיצוב מלא עבור ישראלים עם נכס בלונדון. סיורי אתר שבועיים, בקרת תקציב ולוח זמנים, דיווח עם תמונות וסרטונים. אתם בישראל, אני מנהלת על הקרקע.</p>
+  </div>
+  <div class="service-box">
+    <img src="/he/assets/icons/notepad.png" alt="">
+    <h3>ייעוץ לפני רכישה</h3>
+    <p>ייעוץ על שכונות, סוגי נכסים, מה לבדוק לפני שחותמים. הפניות לאנשי מקצוע מוכחים - עורכי דין, שמאים, סוקרים. שיחה אחת יכולה לחסוך טעויות יקרות.</p>
+  </div>
+  <div class="service-box">
+    <img src="/he/assets/icons/sofa.png" alt="">
+    <h3>עיצוב לשימוש כפול</h3>
+    <p>הדירה צריכה לעבוד לזוג שמגיע לסופשבוע וגם למשפחה שלמה לשלושה שבועות באוגוסט. עיצוב שמתאים לשני המצבים בלי פשרות.</p>
+  </div>
+  <div class="service-box">
+    <img src="/he/assets/icons/table.png" alt="">
+    <h3>רשת מקצועית בלונדון</h3>
+    <p>קבלנים, אדריכלים, נגרים, חשמלאים, ספקים - רשת שנבנתה לאורך שנים. אתם לא מתחילים מאפס ולא צריכים לחפש בעצמכם.</p>
+  </div>
+  <div class="service-box">
+    <img src="/he/assets/icons/picture-frame.png" alt="">
+    <h3>תרגום בין עולמות</h3>
+    <p>הבריטים עובדים אחרת - planning permission, leasehold, listed buildings. אני מתרגמת בין המערכת הבריטית לישראלים שנכנסים לתהליך בפעם הראשונה.</p>
+  </div>
+</div>
 <div class="index-intro">
   <h1>מאמרים ומדריכים</h1>
-  <p>על עיצוב פנים, שיפוץ וקניית נכס בלונדון</p>
+  <p>לישראלים שקונים נכס בלונדון</p>
 </div>
-<ul class="article-list"><li><a href="/he/remote-renovation/" dir="rtl">איך לנהל שיפוץ בלונדון מישראל</a></li></ul>
+<ul class="article-list"><li><a href="/he/before-you-sign/" dir="rtl">מה לבדוק לפני שחותמים על נכס בלונדון</a></li>
+<li><a href="/he/british-contractors/" dir="rtl">למה קבלנים בריטיים מצטטים ככה - ומה באמת לצפות</a></li>
+<li><a href="/he/buying-process/" dir="rtl">איך קונים נכס בלונדון - התהליך שישראלים לא מכירים</a></li>
+<li><a href="/he/chelsea/" dir="rtl">צ׳לסי לונדון - השכונה שנראית מושלמת על הנייר</a></li>
+<li><a href="/he/family-flat-design/" dir="rtl">עיצוב דירה לשימוש משפחתי - איך מעצבים דירה בלונדון שעובדת לכולם</a></li>
+<li><a href="/he/hampstead-vs-sjw/" dir="rtl">המפסטד מול סנט ג׳ונס ווד - השוואה כנה</a></li>
+<li><a href="/he/hidden-costs/" dir="rtl">העלויות שאף אחד לא מספר לכם על נכס בלונדון</a></li>
+<li><a href="/he/israeli-vs-british-home/" dir="rtl">איך ישראלים ובריטים חושבים אחרת על בית</a></li>
+<li><a href="/he/just-bought-now-what/" dir="rtl">קניתי דירה בלונדון - מה עכשיו?</a></li>
+<li><a href="/he/leasehold-freehold/" dir="rtl">ליסהולד או פריהולד - מה ההבדל ולמה זה קריטי</a></li>
+<li><a href="/he/listed-buildings/" dir="rtl">מבנה רשום בלונדון - מתי אסור לגעת בכלום</a></li>
+<li><a href="/he/london-with-kids/" dir="rtl">לונדון עם ילדים - מה שמדריכי הטיולים לא מספרים לכם</a></li>
+<li><a href="/he/maida-vale/" dir="rtl">מיידה וייל לונדון - השכונה השקטה שישראלים עוד לא גילו</a></li>
+<li><a href="/he/marylebone/" dir="rtl">מרילבון לונדון - השכונה שלא צריכה להוכיח כלום</a></li>
+<li><a href="/he/neighbourhoods-guide/" dir="rtl">השכונות שישראלים קונים בהן בלונדון</a></li>
+<li><a href="/he/notting-hill/" dir="rtl">נוטינג היל לונדון - המדריך שקונים ישראלים צריכים לפני שחותמים</a></li>
+<li><a href="/he/period-features/" dir="rtl">מה זה period features ולמה זה משפיע על המחיר</a></li>
+<li><a href="/he/planning-permission/" dir="rtl">אישורי תכנון בלונדון - מה שישראלים לא יודעים</a></li>
+<li><a href="/he/primrose-hill/" dir="rtl">פרימרוז היל ובלסייז פארק - השכונות שישראלים עוד לא גילו</a></li>
+<li><a href="/he/real-estate-for-israelis/" dir="rtl">נדל\"ן בלונדון לישראלים - מה באמת צריך לדעת לפני שקונים</a></li>
+<li><a href="/he/remote-renovation/" dir="rtl">איך לנהל שיפוץ בלונדון מישראל</a></li>
+<li><a href="/he/renovation-timeline/" dir="rtl">איך שיפוץ בלונדון באמת עובד - לוחות זמנים, עלויות, תהליך</a></li>
+<li><a href="/he/school-short-stay/" dir="rtl">בית ספר בלונדון לשהייה קצרה - מה שמשפחות ישראליות צריכות לדעת</a></li>
+<li><a href="/he/south-kensington/" dir="rtl">סאות׳ קנזינגטון - השכונה שמרגישה כמו לונדון שדמיינתם</a></li>
+<li><a href="/he/what-is-london/" dir="rtl">מה זה בעצם ״לונדון״ - העיר שהיא לא עיר</a></li></ul>
 
 <footer>
   <div class="footer-inner">
