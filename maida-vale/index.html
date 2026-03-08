@@ -30,13 +30,25 @@
     <a href="/he/" class="d-block">
       <img src="/he/assets/logo.png" alt="תמר קריאייטיב - עיצוב פנים" style="height:65px;width:auto">
     </a>
-    <nav class="d-flex gap-4">
+    <nav class="d-none d-md-flex gap-4">
       <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
       <a href="/he/articles/" class="nav-link">מאמרים</a>
       <a href="/he/about/" class="nav-link">אודות</a>
       <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
     </nav>
-    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
+    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none d-none d-md-block" target="_blank" rel="noopener">EN</a>
+    <button class="btn d-md-none ms-auto hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav" aria-expanded="false" aria-label="תפריט">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="collapse container" id="mobile-nav">
+    <nav class="d-flex flex-column gap-3 py-3">
+      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
+      <a href="/he/articles/" class="nav-link">מאמרים</a>
+      <a href="/he/about/" class="nav-link">אודות</a>
+      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
+      <a href="https://www.tamarcreative.com" class="text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
+    </nav>
   </div>
 </header>
 <div class="container-hero mx-auto"><img src="images/hero.webp" alt="מיידה וייל לונדון - השכונה השקטה שישראלים עוד לא גילו" class="w-100 d-block"></div>

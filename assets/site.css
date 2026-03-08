@@ -67,10 +67,16 @@ h3 { font-size: 1.1rem; font-weight: 500; color: var(--text); margin-top: 1.75re
 .card:hover .card-title { color: var(--brand); }
 
 /* Swiper overrides */
-.swiper-button-next, .swiper-button-prev { color: #fff; }
+.swiper-button-next, .swiper-button-prev { --swiper-navigation-color: #fff; }
 .swiper-pagination-bullet-active { background: var(--brand); }
 .swiper-slide { opacity: 0 !important; transition: opacity .8s ease; }
 .swiper-slide-active { opacity: 1 !important; }
+
+/* Hamburger menu */
+.hamburger-btn { padding: 4px; border: none; background: none; }
+.hamburger-btn:hover svg { stroke: var(--brand); }
+#mobile-nav { border-top: 1px solid #eee; }
+#mobile-nav .nav-link { font-size: 1rem; padding: .25rem 0; }
 
 /* Responsive */
 @media (max-width: 576px) {
