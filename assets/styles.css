@@ -9,41 +9,15 @@ body {
 }
 
 /* Header */
-header {
-  height: 116px;
-}
-.header-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
-  height: 100%;
-}
-.logo-link { display: block; }
-.logo { max-width: 230px; height: auto; }
-nav { display: flex; gap: 32px; }
-.lang-switch {
-  margin-inline-start: auto;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: #999;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.lang-switch:hover { color: #c88a2e; }
-nav a {
+.navbar .nav-link {
   color: #666;
-  text-decoration: none;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.03em;
   transition: color 0.2s;
 }
-nav a:hover { color: #c88a2e; }
+.navbar .nav-link:hover { color: #c88a2e; }
+.navbar-collapse .navbar-nav .nav-link { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 
 /* Hero image */
 .hero-image {
@@ -609,9 +583,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 600px) {
-  .header-inner { flex-direction: column; gap: 12px; }
-  .logo { max-width: 180px; }
-  nav { gap: 20px; }
+  .navbar-brand img { max-width: 180px; }
   h1 { font-size: 24px; }
   .container { padding: 32px 16px 48px; }
   .about-top { flex-direction: column; }

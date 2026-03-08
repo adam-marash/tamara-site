@@ -25,34 +25,26 @@
 </head>
 <body>
 
-<header class="py-3">
-  <div class="container d-flex align-items-center gap-4">
-    <a href="/he/" class="d-block">
+<nav class="navbar navbar-expand-md py-3">
+  <div class="container">
+    <a class="navbar-brand" href="/he/">
       <img src="/he/assets/logo.png" alt="תמר קריאייטיב - נכס בלונדון לישראלים" style="max-width:230px;height:auto">
     </a>
-    <nav class="d-none d-md-flex gap-4">
-      <a href="/he/the-process/" class="nav-link">איך אני עובדת</a>
-      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
-      <a href="/he/articles/" class="nav-link">מאמרים</a>
-      <a href="/he/about/" class="nav-link">אודות</a>
-      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
-    </nav>
-    <a href="https://www.tamarcreative.com" class="ms-auto text-secondary small text-decoration-none d-none d-md-block" target="_blank" rel="noopener">EN</a>
-    <button class="btn d-md-none ms-auto hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav" aria-expanded="false" aria-label="תפריט">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="תפריט">
+      <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav gap-1 w-100">
+        <li class="nav-item"><a href="/he/the-process/" class="nav-link">איך אני עובדת</a></li>
+        <li class="nav-item"><a href="/he/neighbourhoods/" class="nav-link">שכונות</a></li>
+        <li class="nav-item"><a href="/he/articles/" class="nav-link">מאמרים</a></li>
+        <li class="nav-item"><a href="/he/about/" class="nav-link">אודות</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a></li>
+        <li class="nav-item ms-md-auto"><a href="https://www.tamarcreative.com" class="nav-link text-secondary small" target="_blank" rel="noopener">EN</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="collapse container" id="mobile-nav">
-    <nav class="d-flex flex-column gap-3 py-3">
-      <a href="/he/the-process/" class="nav-link">איך אני עובדת</a>
-      <a href="/he/neighbourhoods/" class="nav-link">שכונות</a>
-      <a href="/he/articles/" class="nav-link">מאמרים</a>
-      <a href="/he/about/" class="nav-link">אודות</a>
-      <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#wa-modal">צרו קשר</a>
-      <a href="https://www.tamarcreative.com" class="text-secondary small text-decoration-none" target="_blank" rel="noopener">EN</a>
-    </nav>
-  </div>
-</header>
+</nav>
 <div class="container-hero mx-auto"><img src="images/hero.webp" alt="איך קבלנים מקומיים מתמחרים - ומה באמת לצפות" class="w-100 d-block"></div>
 <main class="container article-body">
 <h1>איך קבלנים מקומיים מתמחרים - ומה באמת לצפות</h1>
