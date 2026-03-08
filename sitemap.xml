@@ -13,6 +13,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tamarcreative.com/he/_test-admin-roundtrip/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://tamarcreative.com/he/borough-market/</loc>
     <priority>0.6</priority>
   </url>
