@@ -32,6 +32,9 @@ h3 { font-size: 1.1rem; font-weight: 500; color: var(--text); margin-top: 1.75re
 /* Article body container */
 .article-body { max-width: 720px; padding-top: 3rem; padding-bottom: 4rem; }
 
+/* Preserve aspect ratio when intrinsic width/height attrs are present but CSS sizes the width */
+img { height: auto; max-width: 100%; }
+
 /* Hero image */
 .container-hero { max-width: 980px; }
 
